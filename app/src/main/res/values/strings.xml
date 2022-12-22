@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Android Tut</string>
+    <string name="btnLogin">Login</string>
+    <string name="btnSignup">Sign Up</string>
+    <string name="altTxt">Content Description</string>
+    <string name="tvDummyTxt">"All the courses are job-oriented, up-to-date with the latest algorithms and modules, fully practical, and provide you hands-on projects. "</string>
+    <string name="entTxt">Enter your text</string>
+    <string name="btnSend">Send</string>
 </resources>

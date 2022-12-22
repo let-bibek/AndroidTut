@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views_tut"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
+    <ImageView
+        android:id="@+id/ivCode"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/code"
+        android:contentDescription="@string/altTxt"
+        />
+    <TextView
+        android:id="@+id/tvViewTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tvDummyTxt"
+        android:textColor="@color/lightDark"
+        android:textSize="18sp"
+        android:padding="10dp"
+        />
+    <EditText
+        android:id="@+id/etViewEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/entTxt"
+        android:autofillHints="name"
+        android:inputType="text"
+        android:ems="16"
+        />
+<!--    largest alphabet is M. We consider M as a 1ems.-->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:gravity="center"
+        android:text="@string/btnSend"
+        />
+</LinearLayout>
