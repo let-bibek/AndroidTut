@@ -9,5 +9,6 @@
     <string name="enterWt">Enter your weight</string>
     <string name="enterHt">Enter your height(in ft.)</string>
     <string name="enterHtIn">Enter your height (in inch)</string>
-    <string name="Calculate">Calculate</string>
+    <string name="Calculate">Calculate BMI</string>
+    <string name="result">Result :</string>
 </resources>

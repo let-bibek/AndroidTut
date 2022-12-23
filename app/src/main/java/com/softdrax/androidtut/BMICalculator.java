@@ -2,6 +2,7 @@ package com.softdrax.androidtut;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -27,6 +28,7 @@ private int weight,heightFt,heightIn;
         btnCalc=findViewById(R.id.btnCalculate);
         tvRes=findViewById(R.id.tvResultBmi);
         btnCalc.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View view) {
                weight= Integer.parseInt( etWeight.getText().toString());
@@ -38,10 +40,13 @@ private int weight,heightFt,heightIn;
                double totalHeightM=heightCm/100;
                double BMI=weight/(Math.pow(totalHeightM,2));
                if(BMI>25){
-                   tvRes.setText("You are over weight.");
+                   tvRes.setText("You are over weight");
+               }
+               else if(BMI<15){
+                   tvRes.setText("You are under weight");
                }
                else{
-                   tvRes.setText("You seem to be healthy.");
+                   tvRes.setText("You seem to be healthy");
                }
             }
         });

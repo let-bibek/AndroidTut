@@ -1,46 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".BMICalculator"
-    android:gravity="center_horizontal"
-    android:paddingVertical="100dp"
+    android:gravity="center"
     android:orientation="vertical"
     >
+
+    <TextView
+        android:id="@+id/tvResultBmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:padding="@dimen/padding_sm"
+        android:textSize="22sp"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        />
 
     <EditText
         android:id="@+id/etWeight"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/etHeight"
-        android:autofillHints="Weight"
-        android:ems="@dimen/char14"
+        android:ems="14"
         android:hint="@string/enterWt"
         android:inputType="number"
-        android:textColorHint="@dimen/hintColor" />
+        android:textColorHint="@color/hintColor" />
 
     <EditText
         android:id="@+id/etHeightFt"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/etHeight"
         android:layout_marginTop="@dimen/medium_margin"
-        android:autofillHints="Height"
-        android:ems="@dimen/char14"
+        android:ems="14"
         android:hint="@string/enterHt"
         android:inputType="number"
-        android:textColorHint="@dimen/hintColor" />
+        android:textColorHint="@color/hintColor" />
 
     <EditText
         android:id="@+id/etHeightIn"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/etHeight"
         android:layout_marginTop="@dimen/medium_margin"
-        android:autofillHints="Height"
-        android:ems="@dimen/char14"
+        android:ems="14"
         android:hint="@string/enterHtIn"
         android:inputType="number"
-        android:textColorHint="@dimen/hintColor" />
+        android:textColorHint="@color/hintColor" />
     <Button
         android:id="@+id/btnCalculate"
         android:layout_width="wrap_content"
@@ -50,13 +63,6 @@
         android:layout_marginTop="@dimen/medium_margin"
         android:padding="@dimen/padding_sm"
         />
-    <TextView
-        android:id="@+id/tvResultBmi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:layout_marginTop="@dimen/medium_margin"
-        android:padding="@dimen/padding_sm"
-        />
 
 </LinearLayout>
+</ScrollView>
