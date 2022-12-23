@@ -6,4 +6,8 @@
     <string name="tvDummyTxt">"All the courses are job-oriented, up-to-date with the latest algorithms and modules, fully practical, and provide you hands-on projects. "</string>
     <string name="entTxt">Enter your text</string>
     <string name="btnSend">Send</string>
+    <string name="enterWt">Enter your weight</string>
+    <string name="enterHt">Enter your height(in ft.)</string>
+    <string name="enterHtIn">Enter your height (in inch)</string>
+    <string name="Calculate">Calculate</string>
 </resources>

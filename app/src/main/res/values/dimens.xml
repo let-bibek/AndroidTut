@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="medium_margin">20dp</dimen>
+    <dimen name="padding_sm">15dp</dimen>
+    <dimen name="char14">14</dimen>
+</resources>
