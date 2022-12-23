@@ -9,35 +9,38 @@
     android:paddingVertical="100dp"
     android:orientation="vertical"
     >
+
     <EditText
         android:id="@+id/etWeight"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/etHeight"
+        android:autofillHints="Weight"
         android:ems="@dimen/char14"
         android:hint="@string/enterWt"
-        android:autofillHints="Weight"
         android:inputType="number"
-        />
+        android:textColorHint="@dimen/hintColor" />
+
     <EditText
-        android:id="@+id/etHeight"
+        android:id="@+id/etHeightFt"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/etHeight"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:autofillHints="Height"
         android:ems="@dimen/char14"
         android:hint="@string/enterHt"
-        android:autofillHints="Height"
         android:inputType="number"
-        android:layout_marginTop="@dimen/medium_margin"
-        />
+        android:textColorHint="@dimen/hintColor" />
+
     <EditText
         android:id="@+id/etHeightIn"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/etHeight"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:autofillHints="Height"
         android:ems="@dimen/char14"
         android:hint="@string/enterHtIn"
         android:inputType="number"
-        android:layout_marginTop="@dimen/medium_margin"
-        android:autofillHints="Height"
-        />
+        android:textColorHint="@dimen/hintColor" />
     <Button
         android:id="@+id/btnCalculate"
         android:layout_width="wrap_content"

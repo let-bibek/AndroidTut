@@ -19,5 +19,8 @@ private int weight,heightFt,heightIn;
         Button btnCalc;
 
         etWeight=findViewById(R.id.etWeight);
+        etHeightFt=findViewById(R.id.etHeightFt);
+        etHeightIn=findViewById(R.id.etHeightIn);
+        btnCalc=findViewById(R.id.btnCalculate);
     }
 }

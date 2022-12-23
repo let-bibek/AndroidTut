@@ -3,4 +3,6 @@
     <dimen name="medium_margin">20dp</dimen>
     <dimen name="padding_sm">15dp</dimen>
     <dimen name="char14">14</dimen>
+    <dimen name="etHeight">48dp</dimen>
+    <dimen name="hintColor">#757575</dimen>
 </resources>
