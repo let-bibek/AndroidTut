@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.text.BreakIterator;
@@ -21,12 +22,14 @@ private int weight,heightFt,heightIn;
         EditText etWeight,etHeightFt,etHeightIn;
         Button btnCalc;
         TextView tvRes;
+        LinearLayout lLout;
 
         etWeight=findViewById(R.id.etWeight);
         etHeightFt=findViewById(R.id.etHeightFt);
         etHeightIn=findViewById(R.id.etHeightIn);
         btnCalc=findViewById(R.id.btnCalculate);
         tvRes=findViewById(R.id.tvResultBmi);
+        lLout=findViewById(R.id.lLout);
         btnCalc.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("SetTextI18n")
             @Override
@@ -41,12 +44,17 @@ private int weight,heightFt,heightIn;
                double BMI=weight/(Math.pow(totalHeightM,2));
                if(BMI>25){
                    tvRes.setText("You are over weight");
+                   lLout.setBackgroundColor(getColor(R.color.danger));
                }
                else if(BMI<15){
                    tvRes.setText("You are under weight");
+                   lLout.setBackgroundColor(getColor(R.color.warning));
+
                }
                else{
                    tvRes.setText("You seem to be healthy");
+                   lLout.setBackgroundColor(getColor(R.color.success));
+
                }
             }
         });
