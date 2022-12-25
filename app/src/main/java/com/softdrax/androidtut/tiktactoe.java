@@ -173,6 +173,20 @@ public class tiktactoe extends AppCompatActivity {
                     flag=0;
 
                 }
+                else if(count==9){
+                    Toast.makeText(this, "It's a draw" + btnVAl3, Toast.LENGTH_SHORT).show();
+                    ttcBtn1.setText("");
+                    ttcBtn2.setText("");
+                    ttcBtn3.setText("");
+                    ttcBtn4.setText("");
+                    ttcBtn5.setText("");
+                    ttcBtn6.setText("");
+                    ttcBtn7.setText("");
+                    ttcBtn8.setText("");
+                    ttcBtn9.setText("");
+                    count=0;
+                    flag=0;
+                }
 
             }
         }
