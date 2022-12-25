@@ -64,34 +64,113 @@ public class tiktactoe extends AppCompatActivity {
                 if (btnVAl1.equals(btnVAl2) && btnVAl2.equals(btnVAl3) && !btnVAl1.equals("")) {
                     Toast.makeText(this, "Winner is: " + btnVAl1, Toast.LENGTH_SHORT).show();
                     ttcBtn1.setText("");
-                    ttcBtn1.setText("");
-                    ttcBtn1.setText("");
-                    ttcBtn1.setText("");
-                    ttcBtn1.setText("");
-                    ttcBtn1.setText("");
-                    ttcBtn1.setText("");
-                    ttcBtn1.setText("");
-                    ttcBtn1.setText("");
+                    ttcBtn2.setText("");
+                    ttcBtn3.setText("");
+                    ttcBtn4.setText("");
+                    ttcBtn5.setText("");
+                    ttcBtn6.setText("");
+                    ttcBtn7.setText("");
+                    ttcBtn8.setText("");
+                    ttcBtn9.setText("");
+                    count=0;
+                    flag=0;
                 } else if (btnVAl1.equals(btnVAl5) && btnVAl5.equals(btnVAl9) && !btnVAl1.equals("")) {
                     Toast.makeText(this, "Winner is: " + btnVAl1, Toast.LENGTH_SHORT).show();
+                    ttcBtn1.setText("");
+                    ttcBtn2.setText("");
+                    ttcBtn3.setText("");
+                    ttcBtn4.setText("");
+                    ttcBtn5.setText("");
+                    ttcBtn6.setText("");
+                    ttcBtn7.setText("");
+                    ttcBtn8.setText("");
+                    ttcBtn9.setText("");
+                    count=0;
+                    flag=0;
 
                 } else if (btnVAl1.equals(btnVAl4) && btnVAl4.equals(btnVAl7) && !btnVAl1.equals("")) {
                     Toast.makeText(this, "Winner is: " + btnVAl1, Toast.LENGTH_SHORT).show();
+                    ttcBtn1.setText("");
+                    ttcBtn2.setText("");
+                    ttcBtn3.setText("");
+                    ttcBtn4.setText("");
+                    ttcBtn5.setText("");
+                    ttcBtn6.setText("");
+                    ttcBtn7.setText("");
+                    ttcBtn8.setText("");
+                    ttcBtn9.setText("");
+                    count=0;
+                    flag=0;
 
                 } else if (btnVAl7.equals(btnVAl8) && btnVAl8.equals(btnVAl9) && !btnVAl7.equals("")) {
                     Toast.makeText(this, "Winner is: " + btnVAl7, Toast.LENGTH_SHORT).show();
+                    ttcBtn1.setText("");
+                    ttcBtn2.setText("");
+                    ttcBtn3.setText("");
+                    ttcBtn4.setText("");
+                    ttcBtn5.setText("");
+                    ttcBtn6.setText("");
+                    ttcBtn7.setText("");
+                    ttcBtn8.setText("");
+                    ttcBtn9.setText("");
+                    count=0;
+                    flag=0;
 
                 } else if (btnVAl3.equals(btnVAl5) && btnVAl5.equals(btnVAl7) && !btnVAl3.equals("")) {
                     Toast.makeText(this, "Winner is: " + btnVAl3, Toast.LENGTH_SHORT).show();
+                    ttcBtn1.setText("");
+                    ttcBtn2.setText("");
+                    ttcBtn3.setText("");
+                    ttcBtn4.setText("");
+                    ttcBtn5.setText("");
+                    ttcBtn6.setText("");
+                    ttcBtn7.setText("");
+                    ttcBtn8.setText("");
+                    ttcBtn9.setText("");
+                    count=0;
+                    flag=0;
 
                 } else if (btnVAl4.equals(btnVAl5) && btnVAl5.equals(btnVAl6) && !btnVAl4.equals("")) {
                     Toast.makeText(this, "Winner is: " + btnVAl4, Toast.LENGTH_SHORT).show();
+                    ttcBtn1.setText("");
+                    ttcBtn2.setText("");
+                    ttcBtn3.setText("");
+                    ttcBtn4.setText("");
+                    ttcBtn5.setText("");
+                    ttcBtn6.setText("");
+                    ttcBtn7.setText("");
+                    ttcBtn8.setText("");
+                    ttcBtn9.setText("");
+                    count=0;
+                    flag=0;
 
                 } else if (btnVAl3.equals(btnVAl6) && btnVAl6.equals(btnVAl9) && !btnVAl3.equals("")) {
                     Toast.makeText(this, "Winner is: " + btnVAl3, Toast.LENGTH_SHORT).show();
+                    ttcBtn1.setText("");
+                    ttcBtn2.setText("");
+                    ttcBtn3.setText("");
+                    ttcBtn4.setText("");
+                    ttcBtn5.setText("");
+                    ttcBtn6.setText("");
+                    ttcBtn7.setText("");
+                    ttcBtn8.setText("");
+                    ttcBtn9.setText("");
+                    count=0;
+                    flag=0;
 
                 } else if (btnVAl2.equals(btnVAl5) && btnVAl5.equals(btnVAl8) && !btnVAl3.equals("")) {
                     Toast.makeText(this, "Winner is: " + btnVAl3, Toast.LENGTH_SHORT).show();
+                    ttcBtn1.setText("");
+                    ttcBtn2.setText("");
+                    ttcBtn3.setText("");
+                    ttcBtn4.setText("");
+                    ttcBtn5.setText("");
+                    ttcBtn6.setText("");
+                    ttcBtn7.setText("");
+                    ttcBtn8.setText("");
+                    ttcBtn9.setText("");
+                    count=0;
+                    flag=0;
 
                 }
 
