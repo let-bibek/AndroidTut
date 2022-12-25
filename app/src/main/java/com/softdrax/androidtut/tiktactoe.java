@@ -11,7 +11,7 @@ import android.widget.Toast;
 public class tiktactoe extends AppCompatActivity {
     Button ttcBtn1, ttcBtn2, ttcBtn3, ttcBtn4, ttcBtn5, ttcBtn6, ttcBtn7, ttcBtn8, ttcBtn9;
     String btnVAl1, btnVAl2, btnVAl3, btnVAl4, btnVAl5, btnVAl6, btnVAl7, btnVAl8, btnVAl9;
-    TextView tvStatus;
+    Button btnTttReset;
     int flag = 0;
     int count = 0;
 
@@ -190,5 +190,24 @@ public class tiktactoe extends AppCompatActivity {
 
             }
         }
+
+//        reset
+        btnTttReset=findViewById(R.id.btnResetTtt);
+        btnTttReset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ttcBtn1.setText("");
+                ttcBtn2.setText("");
+                ttcBtn3.setText("");
+                ttcBtn4.setText("");
+                ttcBtn5.setText("");
+                ttcBtn6.setText("");
+                ttcBtn7.setText("");
+                ttcBtn8.setText("");
+                ttcBtn9.setText("");
+                count=0;
+                flag=0;
+            }
+        });
     }
 }

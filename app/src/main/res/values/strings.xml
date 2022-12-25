@@ -11,4 +11,5 @@
     <string name="enterHtIn">Enter your height (in inch)</string>
     <string name="Calculate">Calculate BMI</string>
     <string name="result">Result :</string>
+    <string name="reset">Reset</string>
 </resources>

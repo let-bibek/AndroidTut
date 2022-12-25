@@ -15,4 +15,5 @@
     <color name="warning">#32AC3600</color>
     <color name="danger">#2FFF0000</color>
     <color name="win">#0F9900</color>
+    <color name="ligth">#FFFFFF</color>
 </resources>
