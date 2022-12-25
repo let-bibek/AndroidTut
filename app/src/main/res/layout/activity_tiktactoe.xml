@@ -5,8 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".tiktactoe"
+    android:orientation="vertical"
     android:gravity="center"
     >
+    <TextView
+        android:id="@+id/tvTttStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="22sp"
+        android:textColor="@color/win"
+        android:textStyle="bold"
+        />
     <GridLayout
         android:id="@+id/glTikTackToe"
         android:layout_width="wrap_content"
