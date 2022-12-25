@@ -17,38 +17,47 @@
         <Button
             android:id="@+id/tttBtn1"
             android:layout_marginEnd="10dp"
+            android:onClick="check"
             />
         <Button
             android:id="@+id/tttBtn2"
 
             android:layout_marginEnd="10dp"
+            android:onClick="check"
             />
         <Button
             android:id="@+id/tttBtn3"
+            android:onClick="check"
 
             />
         <Button
             android:id="@+id/tttBtn4"
+            android:onClick="check"
 
             />
         <Button
             android:id="@+id/tttBtn5"
+            android:onClick="check"
 
             />
         <Button
             android:id="@+id/tttBtn6"
+            android:onClick="check"
 
             />
         <Button
             android:id="@+id/tttBtn7"
+            android:onClick="check"
 
             />
         <Button
             android:id="@+id/tttBtn8"
+            android:onClick="check"
 
             />
         <Button
             android:id="@+id/tttBtn9"
+            android:onClick="check"
 
             />
 
