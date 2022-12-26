@@ -58,6 +58,8 @@ private int weight,heightFt,heightIn;
                }
             }
         });
+        getSupportActionBar().setTitle("BMI calculator");
+
     }
 
 }

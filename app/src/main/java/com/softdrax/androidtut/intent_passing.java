@@ -20,6 +20,7 @@ Button btnToTtt,btnToBmi,btnToViews, btnBundlePassing;
         btnToTtt=findViewById(R.id.btnToTtt);
         btnToBmi=findViewById(R.id.btnToBmi);
         btnToViews=findViewById(R.id.btnToViews);
+        btnBundlePassing=findViewById(R.id.btnBundlePassing);
 
 
 //        executes on clicking button btnNextIntent
@@ -50,5 +51,19 @@ Button btnToTtt,btnToBmi,btnToViews, btnBundlePassing;
                 startActivity(btnToViews);
             }
         });
+
+//        bundle passing
+        btnBundlePassing.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent bundleIntent=new Intent(intent_passing.this,BundlePassing.class);
+                bundleIntent.putExtra("Title","Student Details");
+                bundleIntent.putExtra("Roll",82);
+                bundleIntent.putExtra("StudentName","ibek");
+                startActivity(bundleIntent);
+
+            }
+        });
+
     }
 }

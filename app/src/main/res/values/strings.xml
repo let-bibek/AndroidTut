@@ -17,4 +17,7 @@
     <string name="btnToViews">Views</string>
     <string name="navToIntents">Select One</string>
     <string name="btnBundlePassing">Pass Bundle</string>
+    <string name="bundleTitle">Title</string>
+    <string name="bundleName">Name</string>
+    <string name="bundleRoll">Roll</string>
 </resources>

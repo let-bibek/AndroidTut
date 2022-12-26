@@ -28,5 +28,7 @@ private int age;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_views_tut);
+        getSupportActionBar().setTitle("News sansaar");
+
     }
 }

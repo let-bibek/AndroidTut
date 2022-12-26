@@ -20,6 +20,7 @@ public class tiktactoe extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tiktactoe);
         init();
+        getSupportActionBar().setTitle("Tic Tac Toe");
 
 
     }
@@ -209,5 +210,7 @@ public class tiktactoe extends AppCompatActivity {
                 flag=0;
             }
         });
+
+
     }
 }
