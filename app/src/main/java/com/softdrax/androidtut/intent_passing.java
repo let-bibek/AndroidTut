@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class intent_passing extends AppCompatActivity {
-Button btnToTtt,btnToBmi,btnToViews;
+Button btnToTtt,btnToBmi,btnToViews, btnBundlePassing;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

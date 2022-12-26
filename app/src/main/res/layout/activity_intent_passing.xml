@@ -37,6 +37,10 @@
             android:id="@+id/btnToViews"
             android:text="@string/btnToViews"
             />
+        <Button
+            android:id="@+id/btnBundlePassing"
+            android:text="@string/btnBundlePassing"
+            />
 
     </GridLayout>
 </LinearLayout>

@@ -16,4 +16,5 @@
     <string name="btnToBmi">BMI</string>
     <string name="btnToViews">Views</string>
     <string name="navToIntents">Select One</string>
+    <string name="btnBundlePassing">Pass Bundle</string>
 </resources>
