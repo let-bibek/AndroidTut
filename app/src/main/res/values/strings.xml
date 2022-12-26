@@ -12,4 +12,8 @@
     <string name="Calculate">Calculate BMI</string>
     <string name="result">Result :</string>
     <string name="reset">Reset</string>
+    <string name="btnToTtt">Tik Tac Toe</string>
+    <string name="btnToBmi">BMI</string>
+    <string name="btnToViews">Views</string>
+    <string name="navToIntents">Select One</string>
 </resources>
