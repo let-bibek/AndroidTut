@@ -26,5 +26,6 @@ public class LottieAnim extends AppCompatActivity {
                 laView.playAnimation();
             }
         });
+        getSupportActionBar().setTitle("Lottie Animation");
     }
 }

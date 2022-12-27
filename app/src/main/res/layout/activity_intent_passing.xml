@@ -51,6 +51,10 @@
             android:id="@+id/btnAnimationLottie"
             android:text="@string/btnStartAnimationLottie"
             />
+        <Button
+            android:id="@+id/btnListView"
+            android:text="@string/btnStartListView"
+            />
 
     </GridLayout>
 </LinearLayout>

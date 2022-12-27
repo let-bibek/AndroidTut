@@ -49,9 +49,10 @@ public class AnimationSamp extends AppCompatActivity {
         btnAnimScale.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Animation scale=AnimationUtils.loadAnimation(getApplicationContext(),R.anim.alpha);
+                Animation scale=AnimationUtils.loadAnimation(getApplicationContext(),R.anim.scale);
                 tvAnimation.startAnimation(scale);
             }
         });
+        getSupportActionBar().setTitle("Simple Animation");
     }
 }
