@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnimationSamp"
+    >
+
+    <TextView
+        android:id="@+id/tvAnimation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bibek"
+        android:textSize="50sp"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        />
+    <Button
+        android:id="@+id/btnAnimTrans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Translate"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

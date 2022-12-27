@@ -97,7 +97,7 @@ public class tiktactoe extends AppCompatActivity {
 
                 }
                 else if(count==9){
-                    Toast.makeText(this, "It's a draw" + btnVAl3, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "It's a draw", Toast.LENGTH_SHORT).show();
                     getDelayed();
                 }
 

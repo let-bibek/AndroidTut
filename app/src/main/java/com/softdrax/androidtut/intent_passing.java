@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class intent_passing extends AppCompatActivity {
-Button btnToTtt,btnToBmi,btnToViews, btnBundlePassing;
+Button btnToTtt,btnToBmi,btnToViews, btnBundlePassing,btnAnimation;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,7 +21,7 @@ Button btnToTtt,btnToBmi,btnToViews, btnBundlePassing;
         btnToBmi=findViewById(R.id.btnToBmi);
         btnToViews=findViewById(R.id.btnToViews);
         btnBundlePassing=findViewById(R.id.btnBundlePassing);
-
+        btnAnimation=findViewById(R.id.btnAnimation);
 
 //        executes on clicking button btnNextIntent
         btnToTtt.setOnClickListener(new View.OnClickListener() {
@@ -62,6 +62,16 @@ Button btnToTtt,btnToBmi,btnToViews, btnBundlePassing;
                 bundleIntent.putExtra("StudentName","ibek");
                 startActivity(bundleIntent);
 
+            }
+        });
+
+//        animation
+
+        btnAnimation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent animationSamp=new Intent(intent_passing.this,AnimationSamp.class);
+                startActivity(animationSamp);
             }
         });
 

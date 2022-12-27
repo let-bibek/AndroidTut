@@ -20,5 +20,6 @@
     <string name="bundleTitle">Title</string>
     <string name="bundleName">Name</string>
     <string name="bundleRoll">Roll</string>
-    <string name="splashScreen">SoftDrax</string>
+    <string name="splashScreen">Developed By Bibek</string>
+    <string name="btnStartAnimation">Animation</string>
 </resources>

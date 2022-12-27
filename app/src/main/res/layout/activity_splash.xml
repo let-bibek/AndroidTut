@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".SplashActivity"
     android:gravity="center"
-    android:background="@color/lightYellow"
+    android:background="#FF8C00"
     >
 
     <TextView

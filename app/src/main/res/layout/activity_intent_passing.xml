@@ -42,5 +42,10 @@
             android:text="@string/btnBundlePassing"
             />
 
+        <Button
+            android:id="@+id/btnAnimation"
+            android:text="@string/btnStartAnimation"
+            />
+
     </GridLayout>
 </LinearLayout>
