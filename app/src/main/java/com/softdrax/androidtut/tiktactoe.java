@@ -3,6 +3,7 @@ package com.softdrax.androidtut;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -63,130 +64,41 @@ public class tiktactoe extends AppCompatActivity {
 
 
                 if (btnVAl1.equals(btnVAl2) && btnVAl2.equals(btnVAl3) && !btnVAl1.equals("")) {
+
                     Toast.makeText(this, "Winner is: " + btnVAl1, Toast.LENGTH_SHORT).show();
-                    ttcBtn1.setText("");
-                    ttcBtn2.setText("");
-                    ttcBtn3.setText("");
-                    ttcBtn4.setText("");
-                    ttcBtn5.setText("");
-                    ttcBtn6.setText("");
-                    ttcBtn7.setText("");
-                    ttcBtn8.setText("");
-                    ttcBtn9.setText("");
-                    count=0;
-                    flag=0;
+                    getDelayed();
                 } else if (btnVAl1.equals(btnVAl5) && btnVAl5.equals(btnVAl9) && !btnVAl1.equals("")) {
                     Toast.makeText(this, "Winner is: " + btnVAl1, Toast.LENGTH_SHORT).show();
-                    ttcBtn1.setText("");
-                    ttcBtn2.setText("");
-                    ttcBtn3.setText("");
-                    ttcBtn4.setText("");
-                    ttcBtn5.setText("");
-                    ttcBtn6.setText("");
-                    ttcBtn7.setText("");
-                    ttcBtn8.setText("");
-                    ttcBtn9.setText("");
-                    count=0;
-                    flag=0;
+                    getDelayed();
 
                 } else if (btnVAl1.equals(btnVAl4) && btnVAl4.equals(btnVAl7) && !btnVAl1.equals("")) {
                     Toast.makeText(this, "Winner is: " + btnVAl1, Toast.LENGTH_SHORT).show();
-                    ttcBtn1.setText("");
-                    ttcBtn2.setText("");
-                    ttcBtn3.setText("");
-                    ttcBtn4.setText("");
-                    ttcBtn5.setText("");
-                    ttcBtn6.setText("");
-                    ttcBtn7.setText("");
-                    ttcBtn8.setText("");
-                    ttcBtn9.setText("");
-                    count=0;
-                    flag=0;
+                    getDelayed();
 
                 } else if (btnVAl7.equals(btnVAl8) && btnVAl8.equals(btnVAl9) && !btnVAl7.equals("")) {
                     Toast.makeText(this, "Winner is: " + btnVAl7, Toast.LENGTH_SHORT).show();
-                    ttcBtn1.setText("");
-                    ttcBtn2.setText("");
-                    ttcBtn3.setText("");
-                    ttcBtn4.setText("");
-                    ttcBtn5.setText("");
-                    ttcBtn6.setText("");
-                    ttcBtn7.setText("");
-                    ttcBtn8.setText("");
-                    ttcBtn9.setText("");
-                    count=0;
-                    flag=0;
+                    getDelayed();
 
                 } else if (btnVAl3.equals(btnVAl5) && btnVAl5.equals(btnVAl7) && !btnVAl3.equals("")) {
                     Toast.makeText(this, "Winner is: " + btnVAl3, Toast.LENGTH_SHORT).show();
-                    ttcBtn1.setText("");
-                    ttcBtn2.setText("");
-                    ttcBtn3.setText("");
-                    ttcBtn4.setText("");
-                    ttcBtn5.setText("");
-                    ttcBtn6.setText("");
-                    ttcBtn7.setText("");
-                    ttcBtn8.setText("");
-                    ttcBtn9.setText("");
-                    count=0;
-                    flag=0;
+                    getDelayed();
 
                 } else if (btnVAl4.equals(btnVAl5) && btnVAl5.equals(btnVAl6) && !btnVAl4.equals("")) {
                     Toast.makeText(this, "Winner is: " + btnVAl4, Toast.LENGTH_SHORT).show();
-                    ttcBtn1.setText("");
-                    ttcBtn2.setText("");
-                    ttcBtn3.setText("");
-                    ttcBtn4.setText("");
-                    ttcBtn5.setText("");
-                    ttcBtn6.setText("");
-                    ttcBtn7.setText("");
-                    ttcBtn8.setText("");
-                    ttcBtn9.setText("");
-                    count=0;
-                    flag=0;
+                    getDelayed();
 
                 } else if (btnVAl3.equals(btnVAl6) && btnVAl6.equals(btnVAl9) && !btnVAl3.equals("")) {
                     Toast.makeText(this, "Winner is: " + btnVAl3, Toast.LENGTH_SHORT).show();
-                    ttcBtn1.setText("");
-                    ttcBtn2.setText("");
-                    ttcBtn3.setText("");
-                    ttcBtn4.setText("");
-                    ttcBtn5.setText("");
-                    ttcBtn6.setText("");
-                    ttcBtn7.setText("");
-                    ttcBtn8.setText("");
-                    ttcBtn9.setText("");
-                    count=0;
-                    flag=0;
+                    getDelayed();
 
                 } else if (btnVAl2.equals(btnVAl5) && btnVAl5.equals(btnVAl8) && !btnVAl3.equals("")) {
                     Toast.makeText(this, "Winner is: " + btnVAl3, Toast.LENGTH_SHORT).show();
-                    ttcBtn1.setText("");
-                    ttcBtn2.setText("");
-                    ttcBtn3.setText("");
-                    ttcBtn4.setText("");
-                    ttcBtn5.setText("");
-                    ttcBtn6.setText("");
-                    ttcBtn7.setText("");
-                    ttcBtn8.setText("");
-                    ttcBtn9.setText("");
-                    count=0;
-                    flag=0;
+                    getDelayed();
 
                 }
                 else if(count==9){
                     Toast.makeText(this, "It's a draw" + btnVAl3, Toast.LENGTH_SHORT).show();
-                    ttcBtn1.setText("");
-                    ttcBtn2.setText("");
-                    ttcBtn3.setText("");
-                    ttcBtn4.setText("");
-                    ttcBtn5.setText("");
-                    ttcBtn6.setText("");
-                    ttcBtn7.setText("");
-                    ttcBtn8.setText("");
-                    ttcBtn9.setText("");
-                    count=0;
-                    flag=0;
+                    getDelayed();
                 }
 
             }
@@ -212,5 +124,26 @@ public class tiktactoe extends AppCompatActivity {
         });
 
 
+    }
+
+//    make the reset delayed
+
+    private void getDelayed() {
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                ttcBtn1.setText("");
+                ttcBtn2.setText("");
+                ttcBtn3.setText("");
+                ttcBtn4.setText("");
+                ttcBtn5.setText("");
+                ttcBtn6.setText("");
+                ttcBtn7.setText("");
+                ttcBtn8.setText("");
+                ttcBtn9.setText("");
+                count=0;
+                flag=0;
+            }
+        },2000);
     }
 }

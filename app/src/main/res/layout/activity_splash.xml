@@ -14,8 +14,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/splashScreen"
-        android:textSize="30sp"
+        android:textSize="50sp"
         android:textColor="@color/red"
         android:textStyle="bold"
+        android:fontFamily="cursive"
         />
 </LinearLayout>
