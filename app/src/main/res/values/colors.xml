@@ -16,4 +16,5 @@
     <color name="danger">#2FFF0000</color>
     <color name="win">#0F9900</color>
     <color name="ligth">#FFFFFF</color>
+    <color name="lightYellow">#FF9800</color>
 </resources>
