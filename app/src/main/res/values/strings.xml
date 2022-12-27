@@ -22,4 +22,5 @@
     <string name="bundleRoll">Roll</string>
     <string name="splashScreen">Developed By Bibek</string>
     <string name="btnStartAnimation">Animation</string>
+    <string name="btnStartAnimationLottie">Lottie Anim</string>
 </resources>

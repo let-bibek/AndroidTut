@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class intent_passing extends AppCompatActivity {
-Button btnToTtt,btnToBmi,btnToViews, btnBundlePassing,btnAnimation;
+Button btnToTtt,btnToBmi,btnToViews, btnBundlePassing,btnAnimation,btnAnimationLottie;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +22,7 @@ Button btnToTtt,btnToBmi,btnToViews, btnBundlePassing,btnAnimation;
         btnToViews=findViewById(R.id.btnToViews);
         btnBundlePassing=findViewById(R.id.btnBundlePassing);
         btnAnimation=findViewById(R.id.btnAnimation);
-
+        btnAnimationLottie=findViewById(R.id.btnAnimationLottie);
 //        executes on clicking button btnNextIntent
         btnToTtt.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,6 +72,16 @@ Button btnToTtt,btnToBmi,btnToViews, btnBundlePassing,btnAnimation;
             public void onClick(View view) {
                 Intent animationSamp=new Intent(intent_passing.this,AnimationSamp.class);
                 startActivity(animationSamp);
+            }
+        });
+
+//        Lottie animation
+
+        btnAnimationLottie.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent lottie=new Intent(intent_passing.this,LottieAnim.class);
+                startActivity(lottie);
             }
         });
 

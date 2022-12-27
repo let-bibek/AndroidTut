@@ -47,5 +47,10 @@
             android:text="@string/btnStartAnimation"
             />
 
+        <Button
+            android:id="@+id/btnAnimationLottie"
+            android:text="@string/btnStartAnimationLottie"
+            />
+
     </GridLayout>
 </LinearLayout>

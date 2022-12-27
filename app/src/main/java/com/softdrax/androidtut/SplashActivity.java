@@ -23,16 +23,10 @@ TextView lod1,lod2,lod3,lod4;
         lod4=findViewById(R.id.lod4);
 
         Animation loader= AnimationUtils.loadAnimation(getApplicationContext(),R.anim.loader);
-        Animation loaderOne= AnimationUtils.loadAnimation(getApplicationContext(),R.anim.loader_one);
-
-        Animation loaderTwo= AnimationUtils.loadAnimation(getApplicationContext(),R.anim.loader_two);
-
-        Animation loaderThree= AnimationUtils.loadAnimation(getApplicationContext(),R.anim.loader_three);
-
         lod1.startAnimation(loader);
-        lod2.startAnimation(loaderOne);
-        lod3.startAnimation(loaderTwo);
-        lod4.startAnimation(loaderThree);
+        lod2.startAnimation(loader);
+        lod3.startAnimation(loader);
+        lod4.startAnimation(loader);
         Intent iHome=new Intent(SplashActivity.this,intent_passing.class);
         new Handler().postDelayed(new Runnable() {
             @Override
