@@ -2,8 +2,8 @@
 <set xmlns:android="http://schemas.android.com/apk/res/android"
     android:interpolator="@android:anim/bounce_interpolator"
     >
-        <translate android:fromXDelta="0"
-            android:toXDelta="400"
+        <translate android:fromYDelta="0"
+            android:toYDelta="500"
             android:duration="4000"
             android:repeatCount="infinite"
             android:repeatMode="reverse"

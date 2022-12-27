@@ -15,13 +15,36 @@
         android:textSize="50sp"
         android:textColor="@color/red"
         android:textStyle="bold"
-        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
         />
-    <Button
-        android:id="@+id/btnAnimTrans"
+    <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Translate"
+        android:rowCount="4"
+        android:columnCount="3"
         android:layout_alignParentBottom="true"
-        />
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        >
+        <Button
+            android:id="@+id/btnAnimTrans"
+            android:text="Translate"
+            android:layout_marginEnd="20dp"
+            />
+        <Button
+            android:id="@+id/btnAnimAlpha"
+            android:text="Alpha"
+            android:layout_marginEnd="20dp"
+            />
+        <Button
+            android:id="@+id/btnAnimRot"
+            android:text="Rotate"
+            android:layout_marginEnd="20dp"
+            />
+        <Button
+            android:id="@+id/btnAnimScale"
+            android:text="Scale"
+            android:layout_marginEnd="20dp"
+            />
+    </GridLayout>
 </RelativeLayout>
