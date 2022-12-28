@@ -11,7 +11,7 @@
     android:layout_height="wrap_content"
     tools:context=".CardViewCla"
     android:gravity="center_horizontal"
-    android:layout_marginTop="30dp"
+    android:layout_marginVertical="20dp"
     android:orientation="vertical"
     >
 
@@ -21,7 +21,37 @@
             app:cardElevation="7dp"
             app:cardCornerRadius="7dp"
             app:cardUseCompatPadding="true"
+            android:backgroundTint="@color/md_orange_500"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Card One"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/red"
+                android:textSize="30sp"
+                />
+        </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:cardElevation="7dp"
+        app:cardCornerRadius="7dp"
+        app:cardUseCompatPadding="true"
+        android:backgroundTint="@color/md_blue_200"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Card Two"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:textSize="30sp"
             />
+    </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:layout_width="300dp"
@@ -29,20 +59,23 @@
         app:cardElevation="7dp"
         app:cardCornerRadius="7dp"
         app:cardUseCompatPadding="true"
-        />
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        app:cardElevation="7dp"
-        app:cardCornerRadius="7dp"
-        app:cardUseCompatPadding="true"
-        />
-
+        android:backgroundTint="@color/md_green_400"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Card Three"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:textSize="30sp"
+            />
+    </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
         android:id="@+id/cvExz"
         android:layout_width="300dp"
         android:layout_height="300dp"
+        android:backgroundTint="@color/md_red_500"
         />
 
 </LinearLayout>

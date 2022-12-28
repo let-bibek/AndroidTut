@@ -9,6 +9,7 @@ import android.widget.Button;
 
 public class intent_passing extends AppCompatActivity {
 Button btnToTtt,btnToBmi,btnToViews, btnBundlePassing,btnAnimation,btnAnimationLottie,btnListView,btnCardView;
+Button btnRecyclerView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +26,7 @@ Button btnToTtt,btnToBmi,btnToViews, btnBundlePassing,btnAnimation,btnAnimationL
         btnAnimationLottie=findViewById(R.id.btnAnimationLottie);
         btnListView=findViewById(R.id.btnListView);
         btnCardView=findViewById(R.id.btnCardView);
+        btnRecyclerView=findViewById(R.id.btnRecyclerView);
 //        executes on clicking button btnNextIntent
         btnToTtt.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -105,6 +107,15 @@ Button btnToTtt,btnToBmi,btnToViews, btnBundlePassing,btnAnimation,btnAnimationL
             public void onClick(View v) {
                 Intent cvIntent=new Intent(intent_passing.this,CardViewCla.class);
                 startActivity(cvIntent);
+            }
+        });
+
+//        recycler view
+        btnRecyclerView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent btnRecyclerView=new Intent(intent_passing.this,RecyclerViewCla.class);
+                startActivity((btnRecyclerView));
             }
         });
 
