@@ -3,4 +3,5 @@
     <dimen name="medium_margin">20dp</dimen>
     <dimen name="padding_sm">15dp</dimen>
     <dimen name="etHeight">48dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 </resources>
