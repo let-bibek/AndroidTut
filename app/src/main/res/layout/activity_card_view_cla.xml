@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".CardViewCla"
+    android:gravity="center_horizontal"
+    android:layout_marginTop="30dp"
+    android:orientation="vertical"
+    >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:cardElevation="7dp"
+            app:cardCornerRadius="7dp"
+            app:cardUseCompatPadding="true"
+            />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:cardElevation="7dp"
+        app:cardCornerRadius="7dp"
+        app:cardUseCompatPadding="true"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:cardElevation="7dp"
+        app:cardCornerRadius="7dp"
+        app:cardUseCompatPadding="true"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvExz"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        />
+
+</LinearLayout>
+</ScrollView>

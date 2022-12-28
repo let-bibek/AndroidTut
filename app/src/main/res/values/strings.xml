@@ -24,4 +24,5 @@
     <string name="btnStartAnimation">Animation</string>
     <string name="btnStartAnimationLottie">Lottie Anim</string>
     <string name="btnStartListView">See List</string>
+    <string name="btnStartCardView">Card View</string>
 </resources>

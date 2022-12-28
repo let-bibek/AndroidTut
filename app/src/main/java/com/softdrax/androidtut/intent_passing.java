@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class intent_passing extends AppCompatActivity {
-Button btnToTtt,btnToBmi,btnToViews, btnBundlePassing,btnAnimation,btnAnimationLottie,btnListView;
+Button btnToTtt,btnToBmi,btnToViews, btnBundlePassing,btnAnimation,btnAnimationLottie,btnListView,btnCardView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +24,7 @@ Button btnToTtt,btnToBmi,btnToViews, btnBundlePassing,btnAnimation,btnAnimationL
         btnAnimation=findViewById(R.id.btnAnimation);
         btnAnimationLottie=findViewById(R.id.btnAnimationLottie);
         btnListView=findViewById(R.id.btnListView);
+        btnCardView=findViewById(R.id.btnCardView);
 //        executes on clicking button btnNextIntent
         btnToTtt.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -95,6 +96,15 @@ Button btnToTtt,btnToBmi,btnToViews, btnBundlePassing,btnAnimation,btnAnimationL
                 Intent listView=new Intent(getApplicationContext(),ListViewEx.class);
                 startActivity(listView);
 
+            }
+        });
+
+//        card view
+        btnCardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent cvIntent=new Intent(intent_passing.this,CardViewCla.class);
+                startActivity(cvIntent);
             }
         });
 
