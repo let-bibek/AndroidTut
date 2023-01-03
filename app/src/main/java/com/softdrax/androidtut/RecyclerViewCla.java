@@ -5,9 +5,11 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 
+import android.app.Dialog;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -17,6 +19,7 @@ public class RecyclerViewCla extends AppCompatActivity {
     ArrayList<PlaceModel> arrPlaceModel = new ArrayList<>();
 
     Button btnAddList;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,16 +52,64 @@ public class RecyclerViewCla extends AppCompatActivity {
         arrPlaceModel.add(new PlaceModel(R.drawable.code, "Khalte", "Kaski, 2 days trip"));
         arrPlaceModel.add(new PlaceModel(R.drawable.code, "Shyaldadan", "Kaski, 2 days trip"));
 
-        RecyclerPlaceAdapter adapter = new RecyclerPlaceAdapter(getApplicationContext(), arrPlaceModel);
+        RecyclerPlaceAdapter adapter = new RecyclerPlaceAdapter(this, arrPlaceModel);
         rvPlaces.setAdapter(adapter);
 
 //CRUD
-        btnAddList=findViewById(R.id.btnAddList);
+        btnAddList = findViewById(R.id.btnAddList);
 
         btnAddList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(RecyclerViewCla.this, "Clicked", Toast.LENGTH_SHORT).show();
+                Dialog dialog = new Dialog(RecyclerViewCla.this);
+                dialog.setContentView(R.layout.add_update);
+
+                EditText etEditAddPlace, etEditAddLocation, etEditAddDesc;
+                Button btnAddUpdate;
+
+                etEditAddPlace = dialog.findViewById(R.id.etEditAddPlace);
+                etEditAddLocation = dialog.findViewById(R.id.etEditAddLocation);
+                etEditAddDesc = dialog.findViewById(R.id.etEditAddDesc);
+                btnAddUpdate = dialog.findViewById(R.id.btnAddUpdate);
+
+                btnAddUpdate.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        String place = "", location = "", description = "";
+                        if (!etEditAddPlace.getText().toString().equals("")) {
+
+                            place = etEditAddPlace.getText().toString();
+                        }else {
+                            Toast.makeText(RecyclerViewCla.this, "Add place name", Toast.LENGTH_SHORT).show();
+                        }
+                        if (!etEditAddLocation.getText().toString().equals("")) {
+                            location = etEditAddLocation.getText().toString();
+
+                        }else {
+                            Toast.makeText(RecyclerViewCla.this, "Add location", Toast.LENGTH_SHORT).show();
+                        }
+                        if (!etEditAddDesc.getText().toString().equals("")) {
+                            description = etEditAddDesc.getText().toString();
+
+                        } else {
+                            Toast.makeText(RecyclerViewCla.this, "Add Description", Toast.LENGTH_SHORT).show();
+                        }
+
+                        if(!(place.equals("")||location.equals(""))){
+                            arrPlaceModel.add(new PlaceModel(R.drawable.ic_baseline_send_24,place, location, description));
+//                        array position
+                            int position = arrPlaceModel.size() - 1;
+
+                            adapter.notifyItemInserted(position);
+
+                            rvPlaces.scrollToPosition(position);
+
+                            dialog.dismiss();
+                        }
+                    }
+
+                });
+                dialog.show();
             }
         });
     }
