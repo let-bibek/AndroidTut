@@ -8,6 +8,8 @@ import android.content.DialogInterface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -24,6 +26,7 @@ public class RecyclerPlaceAdapter extends RecyclerView.Adapter<RecyclerPlaceAdap
 
     Context context;
     ArrayList<PlaceModel> arrPlaceModel;
+    private int lastPos = -1;
 
     RecyclerPlaceAdapter(Context context, ArrayList<PlaceModel> arrPlaceModel) {
         this.context = context;
@@ -43,6 +46,9 @@ public class RecyclerPlaceAdapter extends RecyclerView.Adapter<RecyclerPlaceAdap
         holder.ivPlace.setImageResource(arrPlaceModel.get(position).imgPlace);
         holder.tvPlace.setText(arrPlaceModel.get(position).placeName);
         holder.tvDesc.setText(arrPlaceModel.get(position).placeDesc);
+
+        initAnim(holder.itemView,position);
+
         holder.cvPlaceLink.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -71,18 +77,18 @@ public class RecyclerPlaceAdapter extends RecyclerView.Adapter<RecyclerPlaceAdap
                 btnAddUpdate.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        String placeName="",placeLocation="",placeDesc="";
+                        String placeName = "", placeLocation = "", placeDesc = "";
 
                         if (!etEditAddPlace.getText().toString().equals("")) {
 
                             placeName = etEditAddPlace.getText().toString();
-                        }else {
+                        } else {
                             Toast.makeText(context, "Add place name", Toast.LENGTH_SHORT).show();
                         }
                         if (!etEditAddLocation.getText().toString().equals("")) {
                             placeLocation = etEditAddLocation.getText().toString();
 
-                        }else {
+                        } else {
                             Toast.makeText(context, "Add location", Toast.LENGTH_SHORT).show();
                         }
                         if (!etEditAddDesc.getText().toString().equals("")) {
@@ -92,8 +98,8 @@ public class RecyclerPlaceAdapter extends RecyclerView.Adapter<RecyclerPlaceAdap
                             Toast.makeText(context, "Add Description", Toast.LENGTH_SHORT).show();
                         }
 
-                        if(!(placeName.equals("")||placeLocation.equals(""))){
-                            arrPlaceModel.set(position,new PlaceModel(R.drawable.ic_launcher_background,placeName,placeDesc,placeLocation));
+                        if (!(placeName.equals("") || placeLocation.equals(""))) {
+                            arrPlaceModel.set(position, new PlaceModel(R.drawable.ic_launcher_background, placeName, placeDesc, placeLocation));
                             notifyItemChanged(position);
 
                             dialog.dismiss();
@@ -107,7 +113,7 @@ public class RecyclerPlaceAdapter extends RecyclerView.Adapter<RecyclerPlaceAdap
         holder.cvPlaceLink.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
-                AlertDialog.Builder builder=new AlertDialog.Builder(context)
+                AlertDialog.Builder builder = new AlertDialog.Builder(context)
                         .setTitle("Delete place")
                         .setMessage("Are you sure?")
                         .setIcon(R.drawable.ic_baseline_delete_24)
@@ -143,7 +149,6 @@ public class RecyclerPlaceAdapter extends RecyclerView.Adapter<RecyclerPlaceAdap
         CardView cvPlaceLink;
 
 
-
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
@@ -152,5 +157,16 @@ public class RecyclerPlaceAdapter extends RecyclerView.Adapter<RecyclerPlaceAdap
             ivPlace = itemView.findViewById(R.id.ivPlace);
             cvPlaceLink = itemView.findViewById(R.id.cvPlaceLink);
         }
+    }
+
+    private void initAnim(View view,int position){
+
+        if(position>lastPos){
+        Animation slider= AnimationUtils.loadAnimation(context,R.anim.recycle_view_slide_anim);
+        view.startAnimation(slider);
+        lastPos=position;
+
+        }
+
     }
 }
