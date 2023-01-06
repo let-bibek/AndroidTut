@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class intent_passing extends AppCompatActivity {
 Button btnToTtt,btnToBmi,btnToViews, btnBundlePassing,btnAnimation,btnAnimationLottie,btnListView,btnCardView;
-Button btnRecyclerView;
+Button btnRecyclerView,btnToolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -118,6 +118,19 @@ Button btnRecyclerView;
                 startActivity((btnRecyclerView));
             }
         });
+
+//        toolbar
+
+        btnToolbar=findViewById(R.id.btnToolbar);
+
+        btnToolbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentToolbar=new Intent(intent_passing.this,toolbar.class);
+                startActivity(intentToolbar);
+            }
+        });
+
 
     }
 }

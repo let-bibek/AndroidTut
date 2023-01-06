@@ -7,7 +7,7 @@
     tools:context=".SplashActivity"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="#FF8C00"
+    android:background="@color/splashScreen"
     >
 
     <TextView
@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:text="@string/splashScreen"
         android:textSize="50sp"
-        android:textColor="@color/red"
+        android:textColor="@color/splashScreenText"
         android:textStyle="bold"
         android:fontFamily="cursive"
         />

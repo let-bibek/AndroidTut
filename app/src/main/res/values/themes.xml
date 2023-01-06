@@ -15,22 +15,24 @@
     </style>
 
     <style name="SplashTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <!-- Primary brand color. -->
-        <item name="colorPrimary">#FF0159</item>
-        <item name="colorPrimaryVariant">#B3000F</item>
-        <item name="colorOnPrimary">@color/white</item>
-        <!-- Secondary brand color. -->
-        <item name="colorSecondary">#2196F3</item>
-        <item name="colorSecondaryVariant">#016ABA</item>
-        <item name="colorOnSecondary">#FFFFFF</item>
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+     <item name="android:statusBarColor">@color/splashScreen</item>
     </style>
 
     <style name="Theme.AndroidTut.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="customActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
+<!--        status bar color-->
+        <item name="colorPrimary">@color/md_indigo_900</item>
+<!--        action bar color-->
+        <item name="colorPrimaryDark">@color/md_indigo_800</item>
+<!--        textView cursor, progress bar etc color-->
+        <item name="colorAccent">@color/md_indigo_500</item>
+
+        <item name="colorControlNormal">@color/white</item>
     </style>
 
     <style name="Theme.AndroidTut.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
