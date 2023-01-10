@@ -132,5 +132,19 @@ Button btnRecyclerView,btnToolbar;
         });
 
 
+//        custom toast
+
+        Button btnCusToast=findViewById(R.id.btnToast);
+
+        btnCusToast.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent cusIntent=new Intent(intent_passing.this,custom_toast.class);
+
+                startActivity(cusIntent);
+            }
+        });
+
+
     }
 }

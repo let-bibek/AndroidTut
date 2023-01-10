@@ -82,7 +82,12 @@
                 <Button
                     android:id="@+id/btnToolbar"
                     android:text="@string/btnToolbar" />
+
+                <Button
+                    android:id="@+id/btnToast"
+                    android:text="@string/btnToast" />
             </GridLayout>
+
         </androidx.cardview.widget.CardView>
     </LinearLayout>
 </ScrollView>
