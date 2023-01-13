@@ -86,6 +86,10 @@
                 <Button
                     android:id="@+id/btnToast"
                     android:text="@string/btnToast" />
+
+                <Button
+                    android:id="@+id/btnCusDialog"
+                    android:text="@string/btnCusDialog" />
             </GridLayout>
 
         </androidx.cardview.widget.CardView>

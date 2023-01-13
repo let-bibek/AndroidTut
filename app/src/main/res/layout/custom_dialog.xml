@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingHorizontal="30dp"
+    android:paddingVertical="15dp"
+    android:background="@drawable/round_corner"
+
+    >
+    <TextView
+        android:id="@+id/tvDialogPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter password to proceed futher"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp"
+        />
+
+    <EditText
+        android:id="@+id/etDialogPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:ems="15"
+        android:hint="Enter Password"
+        android:minHeight="48dp"
+        android:textColorHint="#606060"
+        android:textSize="18sp"
+        android:background="@drawable/round_edit_text_field"
+        android:paddingHorizontal="10dp"
+        />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center">
+       <Button
+           android:id="@+id/btnDialogCancel"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Cancel"
+           android:minHeight="48dp"
+           style="?android:attr/buttonBarButtonStyle"
+           android:layout_marginEnd="20dp"
+           />
+       <Button
+           android:id="@+id/btnDialog"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Enter"
+           android:minHeight="48dp"
+           style="?android:attr/buttonBarButtonStyle" />
+
+
+   </LinearLayout>
+
+</LinearLayout>

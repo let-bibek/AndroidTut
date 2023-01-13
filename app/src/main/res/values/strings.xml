@@ -38,4 +38,5 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="btnToolbar">Toolbar</string>
     <string name="btnToast">Toats</string>
+    <string name="btnCusDialog">Dialog</string>
 </resources>
