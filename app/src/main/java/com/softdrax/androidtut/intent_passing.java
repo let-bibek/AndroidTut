@@ -1,11 +1,15 @@
 package com.softdrax.androidtut;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class intent_passing extends AppCompatActivity {
 Button btnToTtt,btnToBmi,btnToViews, btnBundlePassing,btnAnimation,btnAnimationLottie,btnListView,btnCardView;
@@ -142,6 +146,33 @@ Button btnRecyclerView,btnToolbar;
                 Intent cusIntent=new Intent(intent_passing.this,custom_toast.class);
 
                 startActivity(cusIntent);
+            }
+        });
+
+        btnCusToast.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                AlertDialog.Builder alertDialog=new AlertDialog.Builder(intent_passing.this)
+                        .setTitle("Enter")
+                        .setMessage("Are you sure?")
+                        .setIcon(R.drawable.ic_baseline_warning_24)
+                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                Intent cusIntent=new Intent(intent_passing.this,custom_toast.class);
+
+                                startActivity(cusIntent);
+                            }
+                        })
+                        .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                Toast.makeText(intent_passing.this, "Cancelled", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                alertDialog.show();
+                Log.d("Tag:","Message");
+                return true;
             }
         });
 
