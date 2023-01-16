@@ -93,6 +93,9 @@
                 <Button
                     android:id="@+id/btnToNotification"
                     android:text="@string/btnToNotification" />
+                <Button
+                    android:id="@+id/btnToCusNotification"
+                    android:text="@string/btnToCusNotification" />
             </GridLayout>
 
         </androidx.cardview.widget.CardView>

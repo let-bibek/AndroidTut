@@ -40,4 +40,5 @@
     <string name="btnToast">Toats</string>
     <string name="btnCusDialog">Dialog</string>
     <string name="btnToNotification">Notification</string>
+    <string name="btnToCusNotification">Cus Notification</string>
 </resources>

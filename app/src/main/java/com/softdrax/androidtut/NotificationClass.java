@@ -17,46 +17,47 @@ import android.widget.Button;
 
 public class NotificationClass extends AppCompatActivity {
     Button btnNotify;
-    static final String FITNESS_CHANNEL_ID="fitness reminder channel";
-    static final int REMINDER_ID=1;
+    static final String FITNESS_CHANNEL_ID = "fitness reminder channel";
+    static final int REMINDER_ID = 1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notification);
         getSupportActionBar().setTitle("Notification");
-        btnNotify=findViewById(R.id.btnNotify);
+        btnNotify = findViewById(R.id.btnNotify);
 //        icon
-        Drawable drawable= ResourcesCompat.getDrawable(getResources(),R.drawable.icon,null);
+        Drawable drawable = ResourcesCompat.getDrawable(getResources(), R.drawable.icon, null);
 
-        BitmapDrawable bitmapDrawable=(BitmapDrawable) drawable;
-        Bitmap largeIcon=bitmapDrawable.getBitmap();
+        BitmapDrawable bitmapDrawable = (BitmapDrawable) drawable;
+        Bitmap largeIcon = bitmapDrawable.getBitmap();
 
 //        notification
-        NotificationManager notificationManager=(NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+        NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         Notification notification;
-      if(android.os.Build.VERSION.SDK_INT>=android.os.Build.VERSION_CODES.O){
-           notification=new Notification.Builder(this)
-                  .setLargeIcon(largeIcon)
-                  .setSmallIcon(R.drawable.icon)
-                  .setContentText("You need to do 20 minutes of workout today")
-                  .setSubText("Workout Reminder")
-                  .setChannelId(FITNESS_CHANNEL_ID)
-                  .build();
-                notificationManager.createNotificationChannel(new NotificationChannel(FITNESS_CHANNEL_ID,"Reminder",NotificationManager.IMPORTANCE_DEFAULT));
-      }else {
-          notification=new Notification.Builder(this)
-                  .setLargeIcon(largeIcon)
-                  .setSmallIcon(R.drawable.icon)
-                  .setContentText("Workout Reminder")
-                  .setSubText("You need to 20 minutes workout today")
-                  .build();
-      }
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            notification = new Notification.Builder(this)
+                    .setLargeIcon(largeIcon)
+                    .setSmallIcon(R.drawable.icon)
+                    .setContentText("20 minutes workout left for today")
+                    .setSubText("Workout Reminder")
+                    .setChannelId(FITNESS_CHANNEL_ID)
+                    .build();
+            notificationManager.createNotificationChannel(new NotificationChannel(FITNESS_CHANNEL_ID, "Reminder", NotificationManager.IMPORTANCE_DEFAULT));
+        } else {
+            notification = new Notification.Builder(this)
+                    .setLargeIcon(largeIcon)
+                    .setSmallIcon(R.drawable.icon)
+                    .setContentText("Workout Reminder")
+                    .setSubText("You need to 20 minutes workout today")
+                    .build();
+        }
 
 
         btnNotify.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                notificationManager.notify(REMINDER_ID,notification);
+                notificationManager.notify(REMINDER_ID, notification);
             }
         });
 

@@ -17,7 +17,7 @@ import android.widget.Toast;
 
 public class intent_passing extends AppCompatActivity {
     Button btnToTtt, btnToBmi, btnToViews, btnBundlePassing, btnAnimation, btnAnimationLottie, btnListView, btnCardView;
-    Button btnRecyclerView, btnToolbar, btnCusDialog,btnToNotification;
+    Button btnRecyclerView, btnToolbar, btnCusDialog,btnToNotification,btnToCusNotification;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -251,6 +251,20 @@ public class intent_passing extends AppCompatActivity {
             public void onClick(View v) {
                 Intent btnToNotificationIntent=new Intent(intent_passing.this, NotificationClass.class);
                 startActivity(btnToNotificationIntent);
+            }
+        });
+
+
+//        custom notification
+
+
+        btnToCusNotification=findViewById(R.id.btnToCusNotification);
+
+        btnToCusNotification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent btnToCusNotificationIntent=new Intent(intent_passing.this, CustomNotification.class);
+                startActivity(btnToCusNotificationIntent);
             }
         });
 
