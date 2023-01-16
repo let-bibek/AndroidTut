@@ -39,4 +39,5 @@
     <string name="btnToolbar">Toolbar</string>
     <string name="btnToast">Toats</string>
     <string name="btnCusDialog">Dialog</string>
+    <string name="btnToNotification">Notification</string>
 </resources>

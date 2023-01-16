@@ -17,7 +17,7 @@ import android.widget.Toast;
 
 public class intent_passing extends AppCompatActivity {
     Button btnToTtt, btnToBmi, btnToViews, btnBundlePassing, btnAnimation, btnAnimationLottie, btnListView, btnCardView;
-    Button btnRecyclerView, btnToolbar, btnCusDialog;
+    Button btnRecyclerView, btnToolbar, btnCusDialog,btnToNotification;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -193,11 +193,11 @@ public class intent_passing extends AppCompatActivity {
                 Dialog cusDialog = new Dialog(intent_passing.this);
                 cusDialog.setContentView(R.layout.custom_dialog);
 
-                Button dialEnter,btnDialogCancel;
+                Button dialEnter, btnDialogCancel;
 
 
                 dialEnter = cusDialog.findViewById(R.id.btnDialog);
-                btnDialogCancel=cusDialog.findViewById(R.id.btnDialogCancel);
+                btnDialogCancel = cusDialog.findViewById(R.id.btnDialogCancel);
 
                 btnDialogCancel.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -230,7 +230,7 @@ public class intent_passing extends AppCompatActivity {
 
                             alertToast.setView(alertView);
 
-                            alertToast.setGravity(Gravity.CENTER_HORIZONTAL|Gravity.TOP, 0, 0);
+                            alertToast.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.TOP, 0, 0);
                             alertToast.show();
                         }
                     }
@@ -238,6 +238,19 @@ public class intent_passing extends AppCompatActivity {
                 cusDialog.setCancelable(false);
                 cusDialog.show();
 
+            }
+        });
+
+
+//        Notification
+
+        btnToNotification=findViewById(R.id.btnToNotification);
+
+        btnToNotification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent btnToNotificationIntent=new Intent(intent_passing.this, NotificationClass.class);
+                startActivity(btnToNotificationIntent);
             }
         });
 

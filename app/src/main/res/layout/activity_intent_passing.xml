@@ -90,6 +90,9 @@
                 <Button
                     android:id="@+id/btnCusDialog"
                     android:text="@string/btnCusDialog" />
+                <Button
+                    android:id="@+id/btnToNotification"
+                    android:text="@string/btnToNotification" />
             </GridLayout>
 
         </androidx.cardview.widget.CardView>
