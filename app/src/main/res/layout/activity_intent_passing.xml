@@ -96,6 +96,9 @@
                 <Button
                     android:id="@+id/btnToCusNotification"
                     android:text="@string/btnToCusNotification" />
+                <Button
+                    android:id="@+id/btnToImplicitIntent"
+                    android:text="@string/btnToImplicitIntent" />
             </GridLayout>
 
         </androidx.cardview.widget.CardView>

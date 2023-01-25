@@ -41,4 +41,10 @@
     <string name="btnCusDialog">Dialog</string>
     <string name="btnToNotification">Notification</string>
     <string name="btnToCusNotification">Cus Notification</string>
+    <string name="btnToImplicitIntent">Implicit intent</string>
+    <string name="btnButton">Button</string>
+    <string name="btnButtonDial">Dial</string>
+    <string name="btnButtonMsg">Message</string>
+    <string name="btnButtonEmail">Email</string>
+    <string name="btnButtonShare">Share</string>
 </resources>
