@@ -62,10 +62,10 @@ public class ImplicitIntentPassing extends AppCompatActivity {
         btnButtonShare.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent shareIntent=new Intent(Intent.ACTION_SEND);
+                Intent shareIntent = new Intent(Intent.ACTION_SEND);
                 shareIntent.setType("text/plain");
-                shareIntent.putExtra(Intent.EXTRA_TEXT,"Download this amazing application for free, Link: https://www.bibekshrestha.info.np");
-                startActivity(Intent.createChooser(shareIntent,"Share via"));
+                shareIntent.putExtra(Intent.EXTRA_TEXT, "Download this amazing application for free, Link: https://www.bibekshrestha.info.np");
+                startActivity(Intent.createChooser(shareIntent, "Share via"));
             }
         });
 

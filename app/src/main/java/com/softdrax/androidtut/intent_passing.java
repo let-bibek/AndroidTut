@@ -18,7 +18,7 @@ import android.widget.Toast;
 public class intent_passing extends AppCompatActivity {
     Button btnToTtt, btnToBmi, btnToViews, btnBundlePassing, btnAnimation, btnAnimationLottie, btnListView, btnCardView;
     Button btnRecyclerView, btnToolbar, btnCusDialog,btnToNotification,btnToCusNotification;
-    Button btnToImplicitIntent;
+    Button btnToImplicitIntent,btnToFragmentEx;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -277,6 +277,19 @@ public class intent_passing extends AppCompatActivity {
             public void onClick(View v) {
                 Intent implicitIntent=new Intent(intent_passing.this,ImplicitIntentPassing.class);
                 startActivity(implicitIntent);
+            }
+        });
+
+
+//        fragment
+
+        btnToFragmentEx=findViewById(R.id.btnToFragmentEx);
+
+        btnToFragmentEx.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent fragmentIntent=new Intent(intent_passing.this,FragmentEx.class);
+                startActivity(fragmentIntent);
             }
         });
 

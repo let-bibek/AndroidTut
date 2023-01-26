@@ -99,6 +99,9 @@
                 <Button
                     android:id="@+id/btnToImplicitIntent"
                     android:text="@string/btnToImplicitIntent" />
+                <Button
+                    android:id="@+id/btnToFragmentEx"
+                    android:text="@string/btnToFragmentEx" />
             </GridLayout>
 
         </androidx.cardview.widget.CardView>
