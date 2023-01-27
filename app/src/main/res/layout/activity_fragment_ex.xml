@@ -7,20 +7,61 @@
     tools:context=".FragmentEx"
     android:orientation="vertical"
     >
-    <fragment
-        android:id="@+id/fragmentExOne"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:name="com.softdrax.androidtut.ExampleFragment"
-        />
+<!--    <fragment-->
+<!--        android:id="@+id/fragmentExOne"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="1"-->
+<!--        android:name="com.softdrax.androidtut.ExampleFragment"-->
+<!--        />-->
 
-    <fragment
-        android:id="@+id/fragmentExTwo"
+<!--    <fragment-->
+<!--        android:id="@+id/fragmentExTwo"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="1"-->
+<!--        android:name="com.softdrax.androidtut.ExampleTwoFragment"-->
+<!--        />-->
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:name="com.softdrax.androidtut.ExampleTwoFragment"
+        android:gravity="center_horizontal"
+        >
+
+        <Button
+            android:id="@+id/btnFragA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_weight="1"
+            android:text="Frag A"
+
+            android:textColor="#000000"
+            style="?android:attr/buttonBarButtonStyle" />
+        <Button
+            android:id="@+id/btnFragB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frag B"
+            android:layout_marginEnd="15dp"
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle" />
+        <Button
+            android:id="@+id/btnFragC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frag C"
+            android:layout_weight="1"
+
+            style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/flFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         />
 
 </LinearLayout>
