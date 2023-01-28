@@ -25,7 +25,7 @@
             android:textStyle="bold" />
 
         <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginVertical="20dp"
             android:elevation="10dp"
@@ -42,66 +42,110 @@
 
                 <Button
                     android:id="@+id/btnToTtt"
-                    android:layout_marginEnd="15dp"
-                    android:text="@string/btnToTtt" />
+
+                    android:text="@string/btnToTtt"
+
+
+                    />
 
                 <Button
                     android:id="@+id/btnToBmi"
-                    android:text="@string/btnToBmi" />
+                    android:text="@string/btnToBmi"
+
+                    />
 
                 <Button
                     android:id="@+id/btnToViews"
-                    android:text="@string/btnToViews" />
+                    android:text="@string/btnToViews"
+
+                    />
 
                 <Button
                     android:id="@+id/btnBundlePassing"
-                    android:text="@string/btnBundlePassing" />
+                    android:text="@string/btnBundlePassing"
+
+                    />
 
                 <Button
                     android:id="@+id/btnAnimation"
-                    android:text="@string/btnStartAnimation" />
+                    android:text="@string/btnStartAnimation"
+
+                    />
 
                 <Button
                     android:id="@+id/btnAnimationLottie"
-                    android:text="@string/btnStartAnimationLottie" />
+                    android:text="@string/btnStartAnimationLottie"
+
+                    />
 
                 <Button
                     android:id="@+id/btnListView"
-                    android:text="@string/btnStartListView" />
+                    android:text="@string/btnStartListView"
+
+                    />
 
                 <Button
                     android:id="@+id/btnCardView"
-                    android:text="@string/btnStartCardView" />
+                    android:text="@string/btnStartCardView"
+
+                    />
+
                 <Button
                     android:id="@+id/btnRecyclerView"
                     android:text="@string/btnRecyclerView"
-                    android:layout_marginEnd="15dp"
+
+
                     />
 
 
                 <Button
                     android:id="@+id/btnToolbar"
-                    android:text="@string/btnToolbar" />
+                    android:text="@string/btnToolbar"
+
+                    />
 
                 <Button
                     android:id="@+id/btnToast"
-                    android:text="@string/btnToast" />
+                    android:text="@string/btnToast"
+
+                    />
 
                 <Button
                     android:id="@+id/btnCusDialog"
-                    android:text="@string/btnCusDialog" />
+                    android:text="@string/btnCusDialog"
+
+                    />
+
                 <Button
                     android:id="@+id/btnToNotification"
-                    android:text="@string/btnToNotification" />
+                    android:text="@string/btnToNotification"
+
+                    />
+
                 <Button
                     android:id="@+id/btnToCusNotification"
-                    android:text="@string/btnToCusNotification" />
+                    android:text="@string/btnToCusNotification"
+
+                    />
+
                 <Button
                     android:id="@+id/btnToImplicitIntent"
+                    android:layout_marginEnd="15dp"
                     android:text="@string/btnToImplicitIntent" />
+
                 <Button
                     android:id="@+id/btnToFragmentEx"
-                    android:text="@string/btnToFragmentEx" />
+                    android:text="@string/btnToFragmentEx"
+
+
+                    />
+
+                <Button
+                    android:id="@+id/btnToTabLayout"
+                    android:text="@string/btnToTabLayout"
+
+
+                    />
             </GridLayout>
 
         </androidx.cardview.widget.CardView>
