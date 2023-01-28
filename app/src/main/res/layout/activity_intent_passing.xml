@@ -143,8 +143,11 @@
                 <Button
                     android:id="@+id/btnToTabLayout"
                     android:text="@string/btnToTabLayout"
+                    />
 
-
+                <Button
+                    android:id="@+id/btnToBottomNavigation"
+                    android:text="@string/btnToBottomNavigation"
                     />
             </GridLayout>
 
