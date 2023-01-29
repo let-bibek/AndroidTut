@@ -5,6 +5,7 @@
     android:orientation="horizontal"
     android:padding="10dp"
     android:layout_marginTop="30dp"
+    android:background="@color/gainsboro"
     >
 
     <de.hdodenhof.circleimageview.CircleImageView
