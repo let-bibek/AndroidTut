@@ -18,7 +18,7 @@ import android.widget.Toast;
 public class intent_passing extends AppCompatActivity {
     Button btnToTtt, btnToBmi, btnToViews, btnBundlePassing, btnAnimation, btnAnimationLottie, btnListView, btnCardView;
     Button btnRecyclerView, btnToolbar, btnCusDialog,btnToNotification,btnToCusNotification;
-    Button btnToImplicitIntent,btnToFragmentEx,btnToTabLayout,btnToBottomNavigation;
+    Button btnToImplicitIntent,btnToFragmentEx,btnToTabLayout,btnToBottomNavigation,btnToNavigationDrawer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -313,6 +313,18 @@ public class intent_passing extends AppCompatActivity {
             public void onClick(View v) {
                 Intent bottomNav=new Intent(intent_passing.this,BottomNavigationActivity.class);
                 startActivity(bottomNav);
+            }
+        });
+
+
+//        navigation drawer
+
+        btnToNavigationDrawer=findViewById(R.id.btnToNavigationDrawer);
+        btnToNavigationDrawer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent navDrawerIntent=new Intent(intent_passing.this,NavigationDrawer.class);
+                startActivity(navDrawerIntent);
             }
         });
 

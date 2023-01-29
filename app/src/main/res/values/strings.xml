@@ -56,4 +56,15 @@
     <string name="menuItemAccount">Account</string>
     <string name="menuItemMenu">Menu</string>
     <string name="menuItemSearch">Search</string>
+    <string name="btnToNavigationDrawer">Navigation Drawer</string>
+    <string name="nvItemChats">Chats</string>
+    <string name="ndItemChats">Chats</string>
+    <string name="ndItemMarketplace">Marketplace</string>
+    <string name="nvItemMessageRequests">Message requests</string>
+    <string name="nvItemArchives">Archives</string>
+    <string name="nvItemSettings">Settings</string>
+    <string name="nvItemExit">Exit</string>
+    <string name="tvUserName">Bibek Shrestha</string>
+    <string name="openDrawer">Open Drawer</string>
+    <string name="closeDrawer">Close Drawer</string>
 </resources>

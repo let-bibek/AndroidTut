@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/ndItemChats" android:title="@string/ndItemChats" android:icon="@drawable/ic_baseline_chat_24"/>
+    <item android:id="@+id/ndItemMarketplace" android:title="@string/ndItemMarketplace" android:icon="@drawable/ic_baseline_business_24"/>
+    <item android:id="@+id/ndItemMessageReq" android:title="@string/nvItemMessageRequests" android:icon="@drawable/ic_baseline_message_24"/>
+    <item android:id="@+id/ndItemArchives" android:title="@string/nvItemArchives" android:icon="@drawable/ic_baseline_archive_24"/>
+    <item android:id="@+id/ndItemSettings" android:title="@string/nvItemSettings" android:icon="@drawable/ic_baseline_settings_24"/>
+    <item android:id="@+id/ndItemExit" android:title="@string/nvItemExit" android:icon="@drawable/ic_baseline_power_settings_new_24"/>
+
+
+
+
+
+</menu>

@@ -149,6 +149,11 @@
                     android:id="@+id/btnToBottomNavigation"
                     android:text="@string/btnToBottomNavigation"
                     />
+
+                <Button
+                    android:id="@+id/btnToNavigationDrawer"
+                    android:text="@string/btnToNavigationDrawer"
+                    />
             </GridLayout>
 
         </androidx.cardview.widget.CardView>

@@ -45,4 +45,7 @@ dependencies {
 //    lottie animation
     def lottieVersion = "3.4.0"
     implementation "com.airbnb.android:lottie:$lottieVersion"
+
+//    round image
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
 }
