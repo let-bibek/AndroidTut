@@ -19,6 +19,7 @@ public class intent_passing extends AppCompatActivity {
     Button btnToTtt, btnToBmi, btnToViews, btnBundlePassing, btnAnimation, btnAnimationLottie, btnListView, btnCardView;
     Button btnRecyclerView, btnToolbar, btnCusDialog, btnToNotification, btnToCusNotification;
     Button btnToImplicitIntent, btnToFragmentEx, btnToTabLayout, btnToBottomNavigation, btnToNavigationDrawer;
+    Button btnToGoogleMap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -325,6 +326,16 @@ public class intent_passing extends AppCompatActivity {
             public void onClick(View v) {
                 Intent navDrawerIntent = new Intent(intent_passing.this, NavigationDrawer.class);
                 startActivity(navDrawerIntent);
+            }
+        });
+
+//        Google map
+        btnToGoogleMap=findViewById(R.id.btnToGoogleMap);
+        btnToGoogleMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent gMapIntent=new Intent(intent_passing.this,MapsActivity.class);
+                startActivity(gMapIntent);
             }
         });
 

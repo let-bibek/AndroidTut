@@ -67,4 +67,6 @@
     <string name="tvUserName">Bibek Shrestha</string>
     <string name="openDrawer">Open Drawer</string>
     <string name="closeDrawer">Close Drawer</string>
+    <string name="btnToGoogleMap">G-Map</string>
+    <string name="title_activity_maps">MapsActivity</string>
 </resources>
