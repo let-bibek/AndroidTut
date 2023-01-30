@@ -50,4 +50,8 @@ dependencies {
 
 //    round image
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+//    network calls
+    implementation 'com.amitshekhar.android:android-networking:1.0.2'
+
 }

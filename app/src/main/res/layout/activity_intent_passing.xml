@@ -160,6 +160,10 @@
                     android:id="@+id/btnToGoogleMap"
                     android:text="@string/btnToGoogleMap"
                     />
+                <Button
+                    android:id="@+id/btnToJsonParse"
+                    android:text="@string/btnToJsonParse"
+                    />
             </GridLayout>
 
         </androidx.cardview.widget.CardView>

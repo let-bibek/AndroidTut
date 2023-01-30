@@ -19,7 +19,7 @@ public class intent_passing extends AppCompatActivity {
     Button btnToTtt, btnToBmi, btnToViews, btnBundlePassing, btnAnimation, btnAnimationLottie, btnListView, btnCardView;
     Button btnRecyclerView, btnToolbar, btnCusDialog, btnToNotification, btnToCusNotification;
     Button btnToImplicitIntent, btnToFragmentEx, btnToTabLayout, btnToBottomNavigation, btnToNavigationDrawer;
-    Button btnToGoogleMap;
+    Button btnToGoogleMap,btnToJsonParse;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -336,6 +336,17 @@ public class intent_passing extends AppCompatActivity {
             public void onClick(View v) {
                 Intent gMapIntent=new Intent(intent_passing.this,MapsActivity.class);
                 startActivity(gMapIntent);
+            }
+        });
+
+//        parsing json response
+
+        btnToJsonParse=findViewById(R.id.btnToJsonParse);
+        btnToJsonParse.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent jsonIntent=new Intent(intent_passing.this,ParseJsonResponse.class);
+                startActivity(jsonIntent);
             }
         });
 
