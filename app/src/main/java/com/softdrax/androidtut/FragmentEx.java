@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 
 public class FragmentEx extends AppCompatActivity {
+    private static final String ROOT_FRAGMENT_TAG = "root_fragment";
     Button btnFragA, btnFragB, btnFragC;
     FrameLayout flFragmentContainer;
 
@@ -23,7 +24,7 @@ public class FragmentEx extends AppCompatActivity {
         btnFragB = findViewById(R.id.btnFragB);
         btnFragC = findViewById(R.id.btnFragC);
         flFragmentContainer = findViewById(R.id.flFragmentContainer);
-
+        loadFragment(TopGainerFragment.getInstance("This is TopGainer Fragment", 58), 0);
         btnFragA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -31,7 +32,7 @@ public class FragmentEx extends AppCompatActivity {
 //                this one is a default fragment because we have given 0 flag for this one and other have 1 flag
 
                 //        data passing in fragment
-                loadFragment(TopGainerFragment.getInstance("This is TopGainer Fragment",58), 0);
+                loadFragment(TopGainerFragment.getInstance("This is TopGainer Fragment", 58), 0);
             }
         });
 
@@ -64,9 +65,13 @@ public class FragmentEx extends AppCompatActivity {
 //        fragment.setArguments(bundle);
         if (flag == 0) {
             ft.add(R.id.flFragmentContainer, fragment);
+            fm.popBackStack(ROOT_FRAGMENT_TAG, FragmentManager.POP_BACK_STACK_INCLUSIVE);
+            ft.addToBackStack(ROOT_FRAGMENT_TAG);
 
-        } else
+        } else {
             ft.replace(R.id.flFragmentContainer, fragment);
+            ft.addToBackStack(null);
+        }
 
         ft.commit();
     }

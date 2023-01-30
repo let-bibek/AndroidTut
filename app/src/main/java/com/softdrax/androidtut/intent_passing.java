@@ -17,8 +17,8 @@ import android.widget.Toast;
 
 public class intent_passing extends AppCompatActivity {
     Button btnToTtt, btnToBmi, btnToViews, btnBundlePassing, btnAnimation, btnAnimationLottie, btnListView, btnCardView;
-    Button btnRecyclerView, btnToolbar, btnCusDialog,btnToNotification,btnToCusNotification;
-    Button btnToImplicitIntent,btnToFragmentEx,btnToTabLayout,btnToBottomNavigation,btnToNavigationDrawer;
+    Button btnRecyclerView, btnToolbar, btnCusDialog, btnToNotification, btnToCusNotification;
+    Button btnToImplicitIntent, btnToFragmentEx, btnToTabLayout, btnToBottomNavigation, btnToNavigationDrawer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -245,12 +245,12 @@ public class intent_passing extends AppCompatActivity {
 
 //        Notification
 
-        btnToNotification=findViewById(R.id.btnToNotification);
+        btnToNotification = findViewById(R.id.btnToNotification);
 
         btnToNotification.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent btnToNotificationIntent=new Intent(intent_passing.this, NotificationClass.class);
+                Intent btnToNotificationIntent = new Intent(intent_passing.this, NotificationClass.class);
                 startActivity(btnToNotificationIntent);
             }
         });
@@ -259,23 +259,23 @@ public class intent_passing extends AppCompatActivity {
 //        custom notification
 
 
-        btnToCusNotification=findViewById(R.id.btnToCusNotification);
+        btnToCusNotification = findViewById(R.id.btnToCusNotification);
 
         btnToCusNotification.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent btnToCusNotificationIntent=new Intent(intent_passing.this, CustomNotification.class);
+                Intent btnToCusNotificationIntent = new Intent(intent_passing.this, CustomNotification.class);
                 startActivity(btnToCusNotificationIntent);
             }
         });
 
 
 //        implicit intent passing
-        btnToImplicitIntent=findViewById(R.id.btnToImplicitIntent);
+        btnToImplicitIntent = findViewById(R.id.btnToImplicitIntent);
         btnToImplicitIntent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent implicitIntent=new Intent(intent_passing.this,ImplicitIntentPassing.class);
+                Intent implicitIntent = new Intent(intent_passing.this, ImplicitIntentPassing.class);
                 startActivity(implicitIntent);
             }
         });
@@ -283,35 +283,35 @@ public class intent_passing extends AppCompatActivity {
 
 //        fragment
 
-        btnToFragmentEx=findViewById(R.id.btnToFragmentEx);
+        btnToFragmentEx = findViewById(R.id.btnToFragmentEx);
 
         btnToFragmentEx.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent fragmentIntent=new Intent(intent_passing.this,FragmentEx.class);
+                Intent fragmentIntent = new Intent(intent_passing.this, FragmentEx.class);
                 startActivity(fragmentIntent);
             }
         });
 
 //        Tab Layout
 
-        btnToTabLayout=findViewById(R.id.btnToTabLayout);
+        btnToTabLayout = findViewById(R.id.btnToTabLayout);
 
         btnToTabLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent tabIntent=new Intent(intent_passing.this,TabActivity.class);
+                Intent tabIntent = new Intent(intent_passing.this, TabActivity.class);
                 startActivity(tabIntent);
             }
         });
 
 //        bottom navigation
 
-        btnToBottomNavigation=findViewById(R.id.btnToBottomNavigation);
+        btnToBottomNavigation = findViewById(R.id.btnToBottomNavigation);
         btnToBottomNavigation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent bottomNav=new Intent(intent_passing.this,BottomNavigationActivity.class);
+                Intent bottomNav = new Intent(intent_passing.this, BottomNavigationActivity.class);
                 startActivity(bottomNav);
             }
         });
@@ -319,11 +319,11 @@ public class intent_passing extends AppCompatActivity {
 
 //        navigation drawer
 
-        btnToNavigationDrawer=findViewById(R.id.btnToNavigationDrawer);
+        btnToNavigationDrawer = findViewById(R.id.btnToNavigationDrawer);
         btnToNavigationDrawer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent navDrawerIntent=new Intent(intent_passing.this,NavigationDrawer.class);
+                Intent navDrawerIntent = new Intent(intent_passing.this, NavigationDrawer.class);
                 startActivity(navDrawerIntent);
             }
         });
