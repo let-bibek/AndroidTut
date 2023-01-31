@@ -70,4 +70,5 @@
     <string name="btnToGoogleMap">G-Map</string>
     <string name="title_activity_maps">MapsActivity</string>
     <string name="btnToJsonParse">Parse Json</string>
+    <string name="btnToWebView">Web View</string>
 </resources>

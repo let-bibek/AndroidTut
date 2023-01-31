@@ -142,28 +142,28 @@
 
                 <Button
                     android:id="@+id/btnToTabLayout"
-                    android:text="@string/btnToTabLayout"
-                    />
+                    android:text="@string/btnToTabLayout" />
 
                 <Button
                     android:id="@+id/btnToBottomNavigation"
-                    android:text="@string/btnToBottomNavigation"
-                    />
+                    android:text="@string/btnToBottomNavigation" />
 
                 <Button
                     android:id="@+id/btnToNavigationDrawer"
-                    android:text="@string/btnToNavigationDrawer"
                     android:layout_marginEnd="10dp"
-                    />
+                    android:text="@string/btnToNavigationDrawer" />
 
                 <Button
                     android:id="@+id/btnToGoogleMap"
-                    android:text="@string/btnToGoogleMap"
-                    />
+                    android:text="@string/btnToGoogleMap" />
+
                 <Button
                     android:id="@+id/btnToJsonParse"
-                    android:text="@string/btnToJsonParse"
-                    />
+                    android:text="@string/btnToJsonParse" />
+
+                <Button
+                    android:id="@+id/btnToWebView"
+                    android:text="@string/btnToWebView" />
             </GridLayout>
 
         </androidx.cardview.widget.CardView>
