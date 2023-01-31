@@ -15,10 +15,16 @@
         android:theme="@style/Theme.AndroidTut"
         tools:targetApi="31">
         <activity
+            android:name=".SharedPreference"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".WebViewEx"
             android:exported="false"
-            android:theme="@style/customActionBar"
-            >
+            android:theme="@style/customActionBar">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

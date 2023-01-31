@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
@@ -357,6 +358,20 @@ public class intent_passing extends AppCompatActivity {
             public void onClick(View v) {
                 Intent webViewIntent = new Intent(intent_passing.this, WebViewEx.class);
                 startActivity(webViewIntent);
+            }
+        });
+
+//        shared preference
+        Button btnToSharedPreference;
+        btnToSharedPreference=findViewById(R.id.btnToSharedPreference);
+        btnToSharedPreference.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+               Intent intentHome=new Intent(intent_passing.this,SharedPreference.class);
+               startActivity(intentHome);
+
+
             }
         });
 
