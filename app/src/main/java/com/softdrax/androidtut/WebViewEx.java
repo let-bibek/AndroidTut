@@ -19,6 +19,8 @@ ProgressBar pbWebView;
 
         wbWebView=findViewById(R.id.wbWebView);
         wbWebView.loadUrl("https://khalte.com");
+        wbWebView.getSettings().setJavaScriptEnabled(true);
+        wbWebView.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
 
         pbWebView=findViewById(R.id.pbWebView);
         wbWebView.setWebViewClient(new WebViewClient(){
