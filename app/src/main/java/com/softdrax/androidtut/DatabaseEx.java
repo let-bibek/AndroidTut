@@ -3,8 +3,12 @@ package com.softdrax.androidtut;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import com.softdrax.androidtut.database.DbHelper;
+import com.softdrax.androidtut.model.UsersModel;
+
+import java.util.ArrayList;
 
 public class DatabaseEx extends AppCompatActivity {
 
@@ -12,12 +16,22 @@ public class DatabaseEx extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_database_ex);
-        DbHelper dbHelper=new DbHelper(this);
-        dbHelper.addUsers("Bibek","kumarbibek094@gmail.com","987005600");
-        dbHelper.addUsers("Sushil","Sushil@gmail.com","987005600");
-        dbHelper.addUsers("Riya","Riya@gmail.com","987005600");
-        dbHelper.addUsers("Aashish","Aashish@gmail.com","987005600");
 
+
+        DbHelper dbHelper=new DbHelper(this);
+//        insert into database
+//        dbHelper.addUsers("Bibek","kumarbibek094@gmail.com","987005600");
+//        dbHelper.addUsers("Sushil","Sushil@gmail.com","987005600");
+//        dbHelper.addUsers("Riya","Riya@gmail.com","987005600");
+//        dbHelper.addUsers("Aashish","Aashish@gmail.com","987005600");
+
+
+//        fetch data from database
+        ArrayList<UsersModel> usersModels= dbHelper.fetchUsers();
+
+        for (int i=0;i<usersModels.size();i++){
+            Log.d("USER_INFO", "Id: "+usersModels.get(i).getId()+"\n"+"Name: "+usersModels.get(i).getName()+"\n\n");
+        }
 
 
     }
