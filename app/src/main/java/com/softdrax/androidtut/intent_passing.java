@@ -7,6 +7,7 @@ import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.media.Image;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
@@ -394,6 +395,17 @@ public class intent_passing extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(intent_passing.this, RoomDatabaseEx.class);
+                startActivity(intent);
+            }
+        });
+
+//        image
+        Button btnToImage;
+        btnToImage=findViewById(R.id.btnToImage);
+        btnToImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(intent_passing.this, ImageUploadUsingCamera.class);
                 startActivity(intent);
             }
         });

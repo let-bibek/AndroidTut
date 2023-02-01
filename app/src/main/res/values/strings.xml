@@ -77,4 +77,5 @@
     <string name="ExpenseTitle">Expense title</string>
     <string name="ExpenseAmount">Expense amount</string>
     <string name="Save">Save</string>
+    <string name="btnToImage">Image</string>
 </resources>

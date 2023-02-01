@@ -15,6 +15,13 @@
         android:theme="@style/Theme.AndroidTut"
         tools:targetApi="31">
         <activity
+            android:name=".ImageUploadUsingCamera"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".RoomDatabaseEx"
             android:exported="false">
             <meta-data
