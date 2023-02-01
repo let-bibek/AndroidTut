@@ -8,7 +8,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:gravity="center"
         android:orientation="vertical"
         android:padding="15dp"
         tools:context=".RoomDatabaseEx">
@@ -78,15 +78,20 @@
             android:layout_gravity="center"
             android:text="Show Expenses" />
 
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true">
 
-        <TextView
-            android:id="@+id/tvListOfExpenses"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Expenses"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            android:visibility="gone" />
+            <TextView
+                android:id="@+id/tvListOfExpenses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Expenses"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:visibility="gone" />
+        </ScrollView>
 
 
     </LinearLayout>

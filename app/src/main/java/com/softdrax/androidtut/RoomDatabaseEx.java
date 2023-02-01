@@ -62,7 +62,7 @@ public class RoomDatabaseEx extends AppCompatActivity {
 //                            + "Title: " + dbList.get(i).getTitle() + "\n"
 //                            + "Amount: " + dbList.get(i).getAmount() + "\n");
 
-                    tvListOfExpenses.append("S.N. " + i+1 + "\n"
+                    tvListOfExpenses.append("S.N. "+dbList.get(i).getId()  + "\n"
                             + "Title: " + dbList.get(i).getTitle() + "\n"
                             + "Amount: " + dbList.get(i).getAmount() + "\n\n");
 
