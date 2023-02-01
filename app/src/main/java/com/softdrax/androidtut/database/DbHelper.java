@@ -55,7 +55,7 @@ public class DbHelper extends SQLiteOpenHelper {
 //    fetch from database
 
     public ArrayList<UsersModel> fetchUsers() {
-        SQLiteDatabase db = getReadableDatabase();
+        SQLiteDatabase db = this.getReadableDatabase();
 
         Cursor cursor = db.rawQuery("SELECT * FROM " + TABLE_NAME, null);
 
@@ -70,6 +70,23 @@ public class DbHelper extends SQLiteOpenHelper {
             arrUsers.add(usersModel);
         }
         return arrUsers;
+    }
+
+//    update users
+    public void updateUsers(UsersModel usersModel){
+
+        SQLiteDatabase db=this.getWritableDatabase();
+        ContentValues contentValues=new ContentValues();
+        contentValues.put(KEY_NAME,usersModel.getName());
+        db.update(TABLE_NAME,contentValues,KEY_ID+"="+usersModel.getId(),null);
+    }
+
+//    delete users
+
+    public void deleteUsers(int id){
+        SQLiteDatabase db=this.getWritableDatabase();
+
+        db.delete(TABLE_NAME,KEY_ID+"=?",new String[]{id+""});
     }
 
 }
