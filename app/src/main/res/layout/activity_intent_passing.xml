@@ -168,6 +168,9 @@
                 <Button
                     android:id="@+id/btnToSharedPreference"
                     android:text="@string/btnLogin" />
+                <Button
+                    android:id="@+id/btnToDatabaseActivity"
+                    android:text="@string/btnToDatabaseActivity" />
             </GridLayout>
 
         </androidx.cardview.widget.CardView>

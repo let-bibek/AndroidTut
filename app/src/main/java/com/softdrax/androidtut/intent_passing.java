@@ -376,5 +376,17 @@ public class intent_passing extends AppCompatActivity {
         });
 
 
+//        database
+        Button btnToDatabaseActivity;
+        btnToDatabaseActivity=findViewById(R.id.btnToDatabaseActivity);
+        btnToDatabaseActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(intent_passing.this,DatabaseEx.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 }
