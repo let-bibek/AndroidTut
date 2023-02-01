@@ -171,6 +171,9 @@
                 <Button
                     android:id="@+id/btnToDatabaseActivity"
                     android:text="@string/btnToDatabaseActivity" />
+                <Button
+                    android:id="@+id/btnToRoomDatabase"
+                    android:text="@string/btnToRoomDatabase" />
             </GridLayout>
 
         </androidx.cardview.widget.CardView>

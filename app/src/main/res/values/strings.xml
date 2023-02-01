@@ -72,4 +72,9 @@
     <string name="btnToJsonParse">Parse Json</string>
     <string name="btnToWebView">Web View</string>
     <string name="btnToDatabaseActivity">Database</string>
+    <string name="btnToRoomDatabase">Room Db</string>
+    <string name="dailyExpenses">Expense Tracker</string>
+    <string name="ExpenseTitle">Expense title</string>
+    <string name="ExpenseAmount">Expense amount</string>
+    <string name="Save">Save</string>
 </resources>

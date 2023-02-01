@@ -363,13 +363,13 @@ public class intent_passing extends AppCompatActivity {
 
 //        shared preference
         Button btnToSharedPreference;
-        btnToSharedPreference=findViewById(R.id.btnToSharedPreference);
+        btnToSharedPreference = findViewById(R.id.btnToSharedPreference);
         btnToSharedPreference.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-               Intent intentHome=new Intent(intent_passing.this,SharedPreference.class);
-               startActivity(intentHome);
+                Intent intentHome = new Intent(intent_passing.this, SharedPreference.class);
+                startActivity(intentHome);
 
 
             }
@@ -378,11 +378,22 @@ public class intent_passing extends AppCompatActivity {
 
 //        database
         Button btnToDatabaseActivity;
-        btnToDatabaseActivity=findViewById(R.id.btnToDatabaseActivity);
+        btnToDatabaseActivity = findViewById(R.id.btnToDatabaseActivity);
         btnToDatabaseActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(intent_passing.this,DatabaseEx.class);
+                Intent intent = new Intent(intent_passing.this, DatabaseEx.class);
+                startActivity(intent);
+            }
+        });
+
+//        room database
+        Button btnToRoomDatabase;
+        btnToRoomDatabase = findViewById(R.id.btnToRoomDatabase);
+        btnToRoomDatabase.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(intent_passing.this, RoomDatabaseEx.class);
                 startActivity(intent);
             }
         });

@@ -1,9 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".RoomDatabaseEx">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp"
+        tools:context=".RoomDatabaseEx">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dailyExpenses"
+                android:textAlignment="center"
+                android:textColor="@color/green"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etExpenseTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:autofillHints="Expense Title"
+                android:background="@drawable/round_edit_text_field"
+                android:ems="15"
+                android:hint="@string/ExpenseTitle"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:paddingHorizontal="10dp"
+                android:textColorHint="#606060"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/etExpenseAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:autofillHints="Expense Amount"
+                android:background="@drawable/round_edit_text_field"
+                android:ems="15"
+                android:hint="@string/ExpenseAmount"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:paddingHorizontal="10dp"
+                android:textColorHint="#606060"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnExpenseSave"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/Save" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnShowExpense"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Show Expenses" />
+
+
+        <TextView
+            android:id="@+id/tvListOfExpenses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Expenses"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+</ScrollView>
