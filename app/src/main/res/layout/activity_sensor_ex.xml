@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".SensorEx"
     android:padding="15dp"
+    android:id="@+id/layoutSensors"
+    android:visibility="gone"
     >
 
     <TextView
