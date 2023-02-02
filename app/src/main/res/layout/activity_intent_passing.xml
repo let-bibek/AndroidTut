@@ -182,6 +182,10 @@
                     android:id="@+id/btnToMusicPlayer"
                     android:text="@string/btnToMusicPlayer" />
 
+                <Button
+                    android:id="@+id/btnToVideoPlayer"
+                    android:text="@string/btnToVideoPlayer" />
+
             </GridLayout>
 
         </androidx.cardview.widget.CardView>

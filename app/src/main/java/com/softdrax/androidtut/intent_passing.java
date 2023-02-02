@@ -421,6 +421,18 @@ public class intent_passing extends AppCompatActivity {
             }
         });
 
+        // video player
+
+        Button btnToVideoPlayer;
+        btnToVideoPlayer=findViewById(R.id.btnToVideoPlayer);
+        btnToVideoPlayer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent iVideo=new Intent(intent_passing.this,VideoPlayer.class);
+                startActivity(iVideo);
+            }
+        });
+
 
     }
 }
