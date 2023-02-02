@@ -11,7 +11,7 @@
 
     <ImageView
         android:id="@+id/ivImageFromCamera"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scaleType="fitXY"
         android:contentDescription="@string/app_name" />
@@ -21,7 +21,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="?android:buttonBarButtonStyle"
-        android:text="Load Image"
+        android:text="Take image"
+        />
+
+    <Button
+        android:id="@+id/btnLoadImageFromGallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:buttonBarButtonStyle"
+        android:text="Load image from gallery"
         />
 
 </LinearLayout>
