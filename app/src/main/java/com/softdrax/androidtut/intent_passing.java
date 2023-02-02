@@ -433,6 +433,17 @@ public class intent_passing extends AppCompatActivity {
             }
         });
 
+        // sensor
+        Button btnToSensor;
+        btnToSensor=findViewById(R.id.btnToSensor);
+        btnToSensor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent iSensor=new Intent(intent_passing.this,SensorEx.class);
+                startActivity(iSensor);
+            }
+        });
+
 
     }
 }

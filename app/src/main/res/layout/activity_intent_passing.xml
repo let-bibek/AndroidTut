@@ -185,6 +185,9 @@
                 <Button
                     android:id="@+id/btnToVideoPlayer"
                     android:text="@string/btnToVideoPlayer" />
+                <Button
+                    android:id="@+id/btnToSensor"
+                    android:text="@string/btnToSensor" />
 
             </GridLayout>
 

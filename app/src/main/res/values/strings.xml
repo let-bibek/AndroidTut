@@ -83,4 +83,5 @@
     <string name="audioPause">Pause</string>
     <string name="audioStop">Stop</string>
     <string name="btnToVideoPlayer">Video Player</string>
+    <string name="btnToSensor">Sensor</string>
 </resources>
