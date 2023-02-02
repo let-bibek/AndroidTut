@@ -178,6 +178,10 @@
                     android:id="@+id/btnToImage"
                     android:text="@string/btnToImage" />
 
+                <Button
+                    android:id="@+id/btnToMusicPlayer"
+                    android:text="@string/btnToMusicPlayer" />
+
             </GridLayout>
 
         </androidx.cardview.widget.CardView>

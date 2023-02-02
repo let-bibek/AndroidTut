@@ -78,4 +78,8 @@
     <string name="ExpenseAmount">Expense amount</string>
     <string name="Save">Save</string>
     <string name="btnToImage">Image</string>
+    <string name="btnToMusicPlayer">Music Player</string>
+    <string name="audioPlay">Play</string>
+    <string name="audioPause">Pause</string>
+    <string name="audioStop">Stop</string>
 </resources>

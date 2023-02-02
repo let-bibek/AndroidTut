@@ -410,6 +410,17 @@ public class intent_passing extends AppCompatActivity {
             }
         });
 
+//        audio player
+        Button btnToMusicPlayer;
+        btnToMusicPlayer=findViewById(R.id.btnToMusicPlayer);
+        btnToMusicPlayer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent iAudio=new Intent(intent_passing.this,MusicPlayer.class);
+                startActivity(iAudio);
+            }
+        });
+
 
     }
 }
