@@ -445,5 +445,18 @@ public class intent_passing extends AppCompatActivity {
         });
 
 
+//        service
+
+        Button btnToService;
+        btnToService=findViewById(R.id.btnToService);
+        btnToService.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent iService=new Intent(intent_passing.this,ServiceEx.class);
+                startActivity(iService);
+            }
+        });
+
+
     }
 }

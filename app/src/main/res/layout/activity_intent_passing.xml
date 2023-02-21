@@ -189,6 +189,11 @@
                     android:id="@+id/btnToSensor"
                     android:text="@string/btnToSensor" />
 
+                <Button
+                    android:id="@+id/btnToService"
+                    android:text="@string/btnToService" />
+
+
             </GridLayout>
 
         </androidx.cardview.widget.CardView>

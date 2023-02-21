@@ -16,6 +16,20 @@
         android:theme="@style/Theme.AndroidTut"
         tools:targetApi="31">
         <activity
+            android:name=".AlarmManagerEx"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ServiceEx"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".SensorEx"
             android:exported="false">
             <meta-data
@@ -251,6 +265,8 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
+        <service android:name=".RingService" />
     </application>
 
 </manifest>
