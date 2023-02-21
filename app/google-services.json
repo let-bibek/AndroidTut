@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "723725448940",
+    "project_id": "androidtut-39402",
+    "storage_bucket": "androidtut-39402.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:723725448940:android:a129b70a2e3831784857c9",
+        "android_client_info": {
+          "package_name": "com.softdrax.androidtut"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "723725448940-lndocmqgr0v5vao7t0cu4lgar0fulj8u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJ2e_kSLMTCLXqO5UfofD4FiLC-6YlOgQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "723725448940-lndocmqgr0v5vao7t0cu4lgar0fulj8u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

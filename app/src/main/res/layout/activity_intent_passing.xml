@@ -168,12 +168,15 @@
                 <Button
                     android:id="@+id/btnToSharedPreference"
                     android:text="@string/btnLogin" />
+
                 <Button
                     android:id="@+id/btnToDatabaseActivity"
                     android:text="@string/btnToDatabaseActivity" />
+
                 <Button
                     android:id="@+id/btnToRoomDatabase"
                     android:text="@string/btnToRoomDatabase" />
+
                 <Button
                     android:id="@+id/btnToImage"
                     android:text="@string/btnToImage" />
@@ -185,6 +188,7 @@
                 <Button
                     android:id="@+id/btnToVideoPlayer"
                     android:text="@string/btnToVideoPlayer" />
+
                 <Button
                     android:id="@+id/btnToSensor"
                     android:text="@string/btnToSensor" />
@@ -192,9 +196,14 @@
                 <Button
                     android:id="@+id/btnToService"
                     android:text="@string/btnToService" />
+
                 <Button
                     android:id="@+id/btnToAlarmManager"
                     android:text="@string/btnToAlarmManager" />
+
+                <Button
+                    android:id="@+id/btnToFirebasePush"
+                    android:text="@string/btnToFirebasePush" />
 
             </GridLayout>
 

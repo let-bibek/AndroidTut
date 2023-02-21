@@ -16,6 +16,13 @@
         android:theme="@style/Theme.AndroidTut"
         tools:targetApi="31">
         <activity
+            android:name=".FirebasePushNotification"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".AlarmManagerEx"
             android:exported="false">
             <meta-data
@@ -267,7 +274,15 @@
         </activity>
 
         <service android:name=".RingService" />
-        <receiver android:name=".AlarmBroadCastReceiver"/>
+
+        <receiver android:name=".AlarmBroadCastReceiver" />
+
+        <service android:name=".FirebaseMsgService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_SERVICE"/>
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>

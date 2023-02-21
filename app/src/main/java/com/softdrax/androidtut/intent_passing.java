@@ -401,22 +401,22 @@ public class intent_passing extends AppCompatActivity {
 
 //        image
         Button btnToImage;
-        btnToImage=findViewById(R.id.btnToImage);
+        btnToImage = findViewById(R.id.btnToImage);
         btnToImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(intent_passing.this, ImageUploadUsingCamera.class);
+                Intent intent = new Intent(intent_passing.this, ImageUploadUsingCamera.class);
                 startActivity(intent);
             }
         });
 
 //        audio player
         Button btnToMusicPlayer;
-        btnToMusicPlayer=findViewById(R.id.btnToMusicPlayer);
+        btnToMusicPlayer = findViewById(R.id.btnToMusicPlayer);
         btnToMusicPlayer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent iAudio=new Intent(intent_passing.this,MusicPlayer.class);
+                Intent iAudio = new Intent(intent_passing.this, MusicPlayer.class);
                 startActivity(iAudio);
             }
         });
@@ -424,22 +424,22 @@ public class intent_passing extends AppCompatActivity {
         // video player
 
         Button btnToVideoPlayer;
-        btnToVideoPlayer=findViewById(R.id.btnToVideoPlayer);
+        btnToVideoPlayer = findViewById(R.id.btnToVideoPlayer);
         btnToVideoPlayer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent iVideo=new Intent(intent_passing.this,VideoPlayer.class);
+                Intent iVideo = new Intent(intent_passing.this, VideoPlayer.class);
                 startActivity(iVideo);
             }
         });
 
         // sensor
         Button btnToSensor;
-        btnToSensor=findViewById(R.id.btnToSensor);
+        btnToSensor = findViewById(R.id.btnToSensor);
         btnToSensor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent iSensor=new Intent(intent_passing.this,SensorEx.class);
+                Intent iSensor = new Intent(intent_passing.this, SensorEx.class);
                 startActivity(iSensor);
             }
         });
@@ -448,11 +448,11 @@ public class intent_passing extends AppCompatActivity {
 //        service
 
         Button btnToService;
-        btnToService=findViewById(R.id.btnToService);
+        btnToService = findViewById(R.id.btnToService);
         btnToService.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent iService=new Intent(intent_passing.this,ServiceEx.class);
+                Intent iService = new Intent(intent_passing.this, ServiceEx.class);
                 startActivity(iService);
             }
         });
@@ -461,12 +461,22 @@ public class intent_passing extends AppCompatActivity {
 //        alarm manager
 
         Button btnToAlarmManager;
-        btnToAlarmManager=findViewById(R.id.btnToAlarmManager);
+        btnToAlarmManager = findViewById(R.id.btnToAlarmManager);
         btnToAlarmManager.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent iAlarm=new Intent(intent_passing.this,AlarmManagerEx.class);
+                Intent iAlarm = new Intent(intent_passing.this, AlarmManagerEx.class);
                 startActivity(iAlarm);
+            }
+        });
+
+
+//        firebase push notification
+        findViewById(R.id.btnToFirebasePush).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent iFirebase = new Intent(intent_passing.this, FirebasePushNotification.class);
+                startActivity(iFirebase);
             }
         });
 

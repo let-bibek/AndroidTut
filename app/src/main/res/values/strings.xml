@@ -86,4 +86,5 @@
     <string name="btnToSensor">Sensor</string>
     <string name="btnToService">Service</string>
     <string name="btnToAlarmManager">Alarm</string>
+    <string name="btnToFirebasePush">Firebase P</string>
 </resources>
