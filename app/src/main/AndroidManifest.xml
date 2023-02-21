@@ -267,6 +267,7 @@
         </activity>
 
         <service android:name=".RingService" />
+        <receiver android:name=".AlarmBroadCastReceiver"/>
     </application>
 
 </manifest>

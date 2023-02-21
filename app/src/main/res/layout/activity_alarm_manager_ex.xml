@@ -6,4 +6,43 @@
     android:layout_height="match_parent"
     tools:context=".AlarmManagerEx">
 
+
+    <EditText
+        android:id="@+id/etAlarmTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:hint="Time"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSetAlarm"
+        style="?buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etAlarmTime"
+        app:layout_constraintStart_toStartOf="@+id/etAlarmTime"
+        app:layout_constraintTop_toTopOf="@+id/etAlarmTime"
+        app:layout_constraintVertical_bias="0.154" />
+
+    <Button
+        android:id="@+id/btnStopAlarm"
+        style="?buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnSetAlarm"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btnSetAlarm"
+        app:layout_constraintTop_toBottomOf="@+id/btnSetAlarm"
+        app:layout_constraintVertical_bias="0.06" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

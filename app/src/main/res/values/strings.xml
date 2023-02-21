@@ -85,4 +85,5 @@
     <string name="btnToVideoPlayer">Video Player</string>
     <string name="btnToSensor">Sensor</string>
     <string name="btnToService">Service</string>
+    <string name="btnToAlarmManager">Alarm</string>
 </resources>

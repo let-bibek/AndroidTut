@@ -192,7 +192,9 @@
                 <Button
                     android:id="@+id/btnToService"
                     android:text="@string/btnToService" />
-
+                <Button
+                    android:id="@+id/btnToAlarmManager"
+                    android:text="@string/btnToAlarmManager" />
 
             </GridLayout>
 

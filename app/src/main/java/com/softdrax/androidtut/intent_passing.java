@@ -458,5 +458,18 @@ public class intent_passing extends AppCompatActivity {
         });
 
 
+//        alarm manager
+
+        Button btnToAlarmManager;
+        btnToAlarmManager=findViewById(R.id.btnToAlarmManager);
+        btnToAlarmManager.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent iAlarm=new Intent(intent_passing.this,AlarmManagerEx.class);
+                startActivity(iAlarm);
+            }
+        });
+
+
     }
 }
