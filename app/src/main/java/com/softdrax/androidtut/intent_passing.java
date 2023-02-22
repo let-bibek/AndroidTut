@@ -481,5 +481,16 @@ public class intent_passing extends AppCompatActivity {
         });
 
 
+//        firebase realtime database
+
+        findViewById(R.id.btnToFirebaseDb).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent iDb = new Intent(intent_passing.this, FirebaseRealTimeDB.class);
+                startActivity(iDb);
+            }
+        });
+
+
     }
 }

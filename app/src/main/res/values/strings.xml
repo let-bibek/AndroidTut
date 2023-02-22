@@ -87,4 +87,5 @@
     <string name="btnToService">Service</string>
     <string name="btnToAlarmManager">Alarm</string>
     <string name="btnToFirebasePush">Firebase P</string>
+    <string name="btnToFirebaseDb">Firebase Db</string>
 </resources>

@@ -205,6 +205,10 @@
                     android:id="@+id/btnToFirebasePush"
                     android:text="@string/btnToFirebasePush" />
 
+                <Button
+                    android:id="@+id/btnToFirebaseDb"
+                    android:text="@string/btnToFirebaseDb" />
+
             </GridLayout>
 
         </androidx.cardview.widget.CardView>
